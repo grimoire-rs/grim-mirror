@@ -1,0 +1,85 @@
+name: Verify Deep
+
+on:
+  workflow_dispatch:
+
+# Every job names its own scopes; nothing is granted here.
+permissions: {}
+
+# Same pin as verify-basic: the grimoire commit grim is built from.
+env:
+  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
+
+# Linux and macOS only. Windows is not built, on purpose: the acceptance suites
+# of this repository skip there (they drive `git` and `grim` through unix process
+# handling, and the unit tests that fake `grim` are `cfg(unix)`), so a Windows
+# build would prove nothing the Linux and macOS legs do not. Windows becomes a
+# leg when the mirror grows a Windows code path.
+jobs:
+  build:
+    name: Build & Unit Test (${{ matrix.job.name }})
+    runs-on: ${{ matrix.job.os }}
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        job:
+          - { os: ubuntu-latest, name: Linux, target: x86_64-unknown-linux-gnu }
+          - { os: macos-latest, name: macOS, target: aarch64-apple-darwin }
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Build grim-mirror
+        uses: ./.github/actions/build-mirror
+        with:
+          target: ${{ matrix.job.target }}
+      - name: Build grim
+        uses: ./.github/actions/build-grim
+        with:
+          commit: ${{ env.GRIM_COMMIT }}
+          artifact: grim-${{ matrix.job.target }}
+      - name: Install nextest
+        uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3
+        with:
+          tool: cargo-nextest
+      - name: Test
+        env:
+          TARGET: ${{ matrix.job.target }}
+        run: cargo nextest run --workspace --target="$TARGET" --profile ci --locked
+      - name: Upload Test Results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: deep-unit-${{ matrix.job.name }}
+          path: target/nextest/ci/junit.xml
+
+  # Linux and macOS run the whole suite against a real registry, sharded,
+  # through acceptance.yml, judged by the floor and ceilings in
+  # `test/SUITE_FLOOR`, `test/SKIP_CEILING` and `test/XFAIL_CEILING`.
+  acceptance-tests:
+    name: Acceptance (${{ matrix.job.name }})
+    needs: [build]
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      matrix:
+        job:
+          - { os: ubuntu-latest, name: Linux, target: x86_64-unknown-linux-gnu }
+          - { os: macos-latest, name: macOS, target: aarch64-apple-darwin }
+    uses: ./.github/workflows/acceptance.yml
+    with:
+      binary-artifact: grim-${{ matrix.job.target }}
+      binary-file: grim
+      mirror-artifact: grim-mirror-${{ matrix.job.target }}
+      mirror-file: grim-mirror
+      runner-os: ${{ matrix.job.os }}
+      check-name: Acceptance Test Results (${{ matrix.job.name }})
+      # The `deep-` prefix is what test-results downloads.
+      merged-artifact: deep-tests-${{ matrix.job.name }}

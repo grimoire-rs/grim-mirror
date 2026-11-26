@@ -1,0 +1,191 @@
+name: Basic Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Every job names its own scopes; nothing is granted here.
+permissions: {}
+
+# The grimoire commit the acceptance suites build `grim` from. Until the
+# grim-sdk crate lands on grimoire's main this is the head of the branch that
+# carries the plugin dispatch and `grim convert` the suites rely on; move it to
+# a main commit when that merges.
+env:
+  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
+
+# Superseded pushes to a feature branch stop burning runners; main never
+# cancels, so every landed commit keeps a complete result.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  conventional-commits:
+    name: Conventional Commits
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Check conventional commits
+        uses: cocogitto/cocogitto-action@52d0023b4396897f1815648e553db2ab8d782f3a # v4.2.0
+        with:
+          command: check
+          args: "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+
+  dco:
+    name: DCO Sign-off
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Check sign-off
+        # SHAs via env, not inline interpolation: the repo-wide rule against
+        # expanding `${{ }}` straight into a shell command.
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: task git:dco RANGE="$BASE_SHA..$HEAD_SHA"
+
+  supply-chain:
+    name: Supply Chain
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Install cargo-deny
+        uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3
+        with:
+          tool: cargo-deny
+      # Its own job, not a step in smoke: neither check needs the compiled
+      # binary, both finish in well under a minute, and a dependency-licence
+      # failure should not be reported as "the build broke".
+      - name: Dependency licences
+        id: licenses
+        run: task rust:license:deps
+        continue-on-error: true
+      - name: RUSTSEC advisories
+        id: advisories
+        run: task rust:audit
+        continue-on-error: true
+      - name: Check supply-chain results
+        if: ${{ !cancelled() }}
+        env:
+          LICENSES: ${{ steps.licenses.outcome }}
+          ADVISORIES: ${{ steps.advisories.outcome }}
+        run: |
+          if [[ "$LICENSES" == "failure" || "$ADVISORIES" == "failure" ]]; then
+            echo "::error::Supply-chain checks failed (licenses=$LICENSES, advisories=$ADVISORIES)"
+            exit 1
+          fi
+
+  smoke:
+    name: Smoke (Linux)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+        with:
+          matcher: true
+          cache: false
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Install nextest
+        uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3
+        with:
+          tool: cargo-nextest
+      - name: Check formatting
+        id: fmt
+        run: task rust:format:check
+        continue-on-error: true
+      - name: Clippy
+        id: clippy
+        run: task rust:clippy:check
+        continue-on-error: true
+      - name: Build
+        run: task rust:build
+      - name: Test
+        run: task rust:test:unit -- --profile ci
+      - name: Upload grim-mirror Binary
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: grim-mirror-binary
+          path: target/release/grim-mirror
+          compression-level: 0
+          retention-days: 3
+      - name: Build grim
+        # grim at the pinned grimoire commit, cached on that commit.
+        uses: ./.github/actions/build-grim
+        with:
+          commit: ${{ env.GRIM_COMMIT }}
+          artifact: grim-binary
+      - name: Publish Unit Test Results
+        if: ${{ !cancelled() }}
+        uses: EnricoMi/publish-unit-test-result-action@da5b7be67623cd59bbbd1a0ce4f022050a55605f # v2.26.0
+        with:
+          files: target/nextest/ci/junit.xml
+          check_name: "Unit Test Results"
+      - name: Check lint results
+        if: ${{ !cancelled() }}
+        env:
+          FMT: ${{ steps.fmt.outcome }}
+          CLIPPY: ${{ steps.clippy.outcome }}
+        run: |
+          if [[ "$FMT" == "failure" || "$CLIPPY" == "failure" ]]; then
+            echo "::error::Lint checks failed (fmt=$FMT, clippy=$CLIPPY)"
+            exit 1
+          fi
+
+  # Four shards, one merge, one published check: acceptance.yml.
+  acceptance-tests:
+    name: Acceptance Tests
+    needs: smoke
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+    uses: ./.github/workflows/acceptance.yml
+    with:
+      binary-artifact: grim-binary
+      binary-file: grim
+      mirror-artifact: grim-mirror-binary
+      mirror-file: grim-mirror
+      runner-os: ubuntu-latest
+      check-name: Acceptance Test Results
+      merged-artifact: acceptance-junit

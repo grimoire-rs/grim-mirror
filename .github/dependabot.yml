@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    # `/` covers .github/workflows only: composite actions need their own
+    # entry, or their pins rot silently.
+    directories:
+      - /
+      - /.github/actions/build-mirror
+      - /.github/actions/build-grim
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "ci(deps)"
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      rust-deps:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore(deps)"

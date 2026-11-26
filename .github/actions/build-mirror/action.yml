@@ -1,0 +1,33 @@
+name: Build grim-mirror
+description: Build the grim-mirror binary for a native target and upload it as an artifact.
+
+inputs:
+  target:
+    description: Rust target triple (native builds only)
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Install Rust Toolchain
+      # Reads rust-toolchain.toml, so CI builds with the pinned toolchain.
+      uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+      with:
+        target: ${{ inputs.target }}
+        cache: false
+    - name: Rust Cache
+      uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+      with:
+        save-if: ${{ github.ref == 'refs/heads/main' }}
+    - name: Build
+      shell: bash
+      env:
+        TARGET: ${{ inputs.target }}
+      run: cargo build --release --locked -p grim-mirror --target="$TARGET"
+    - name: Upload grim-mirror Binary
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: grim-mirror-${{ inputs.target }}
+        path: target/${{ inputs.target }}/release/grim-mirror
+        compression-level: 0
+        retention-days: 7
