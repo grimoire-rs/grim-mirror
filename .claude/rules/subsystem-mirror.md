@@ -22,7 +22,7 @@ paths:
 ## Testing
 
 - Unit tests live beside the code (`cargo test -p grim-mirror`); `cargo clippy -p grim-mirror --all-targets -- -D warnings`.
-- Acceptance: `test/tests/test_mirror_*.py` (bundles, cli, dialect, kinds, license, marketplace, monorepo, retire, staging, versions) plus `test_publish_mirror_table.py`. They use the `grim_mirror_binary` fixture (`GRIM_MIRROR_COMMAND`, else `test/bin/grim-mirror`, built by `test/taskfile.yml`), a `grim` built from the pinned grimoire commit, and a local zot registry. All skip on Windows (no mirror build there), so `test/SUITE_FLOOR` and `SKIP_CEILING` move with the case count.
+- Acceptance: `test/tests/test_mirror_*.py` (bundles, cli, dialect, kinds, license, marketplace, monorepo, retire, staging, versions). They use the `grim_mirror_binary` fixture (`GRIM_MIRROR_COMMAND`, else `test/bin/grim-mirror`, built by `test/taskfile.yml`), a `grim` built from the pinned grimoire commit, and a local zot registry. All skip on Windows (no mirror build there), so `test/SUITE_FLOOR` and `SKIP_CEILING` move with the case count.
 - A new refusal reason, report field or `mirror.toml` key needs a unit test, an acceptance case and a `docs/mirroring.md` update in the same change.
 
 ## Cross-references

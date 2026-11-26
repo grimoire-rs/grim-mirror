@@ -27,9 +27,6 @@ tempfile = "3"
 tokio = { version = "1", features = ["process", "rt", "macros", "time", "io-util", "fs"] }
 spdx = "0.13"
 
-[dev-dependencies]
-tempfile = "3"
-
 [package.metadata.dist]
 dist = false
 

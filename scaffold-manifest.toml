@@ -950,7 +950,7 @@ path = "crates/grim-mirror/README.md"
 source_repo = "grimoire-rs/grimoire"
 source_path = "crates/grim-mirror/README.md"
 source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
-mode = "copied"
+mode = "rewritten"
 sha256 = "1e4234bd88a7a9f49cd138ff7cadc9a510e950fa477461d32cfd8c990e18fc71"
 
 [[file]]
@@ -1974,7 +1974,7 @@ path = "test/src/registry.py"
 source_repo = "grimoire-rs/grimoire"
 source_path = "test/src/registry.py"
 source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
-mode = "copied"
+mode = "rewritten"
 sha256 = "6dccf5b7eac0c7576e0cf7e9e374328816d05642d322800753804fb6fb3b24fa"
 
 [[file]]

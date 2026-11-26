@@ -22,6 +22,7 @@ INVENTORIES = {
     "agent_config": ".agents/research/research_repository_split_agent_config.md",
     "testing_and_conventions": ".agents/research/research_repository_split_testing_and_conventions.md",
 }
+INVENTORY_PATHS = frozenset(INVENTORIES.values())
 DISPOSITIONS = {"taken", "rewritten", "not-applicable"}
 MODES = {"copied", "rewritten"}
 ID_RE = re.compile(r"^[AB]\d+\.\d+$")
@@ -116,7 +117,10 @@ def check(root):
         if f.get("mode") not in MODES:
             defects.append(f"file {p}: invalid mode {f.get('mode')!r}")
         sc = f.get("source_commit", "")
-        if sc != "untracked" and not HEX40.match(sc):
+        if sc == "untracked":
+            if p not in INVENTORY_PATHS:
+                defects.append(f"file {p}: source_commit untracked is valid only for the inventory copies")
+        elif not HEX40.match(sc):
             defects.append(f"file {p}: source_commit is not 40-hex: {sc!r}")
         target = root / p
         if not target.is_file():

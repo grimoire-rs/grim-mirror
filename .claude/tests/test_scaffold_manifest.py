@@ -53,7 +53,16 @@ ROW2 = 'key = "agent_config§1#2"\ndisposition = "rewritten"\ntargets = ["out/ne
 
 DEFECTS = {
     "missing row": ('key = "A1.2"', 'key = "A9.9"', "missing row: testing_and_conventions A1.2"),
-    "unknown key": ('key = "A1.2"', 'key = "A9.9"', "unknown key"),
+    "unknown key": (
+        '[[deviation]]',
+        '[[row]]\ninventory = "testing_and_conventions"\nkey = "A9.9"\ndisposition = "not-applicable"\nreason = "x"\n\n[[deviation]]',
+        "row testing_and_conventions A9.9: unknown key",
+    ),
+    "untracked outside the inventory copies": (
+        'source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"\nmode = "rewritten"',
+        'source_commit = "untracked"\nmode = "rewritten"',
+        "file out/new.txt: source_commit untracked is valid only for the inventory copies",
+    ),
     "missing reason": (ROW2, ROW2.replace('\nreason = "new content"', ""), "missing reason"),
     "missing targets": (ROW1, ROW1.replace('\ntargets = ["out/copied.txt"]', ""), "missing targets"),
     "target absent": ('targets = ["out/new.txt"]\nreason', 'targets = ["out/none.txt"]\nreason', "target does not exist"),
@@ -61,7 +70,11 @@ DEFECTS = {
     "sha mismatch": ('mode = "copied"\nsha256 = "', 'mode = "copied"\nsha256 = "ff', "sha256 mismatch"),
     "bad commit": ("72d3fce16fa93890f0cddef4a8d7443c980716ab", "72d3fce", "not 40-hex"),
     "duplicate path": ('path = "out/new.txt"', 'path = "out/copied.txt"', "duplicate file path"),
-    "duplicate row": ('key = "A1.2"', 'key = "A1.1"', "duplicate row"),
+    "duplicate row": (
+        '[[deviation]]',
+        '[[row]]\ninventory = "testing_and_conventions"\nkey = "A1.2"\ndisposition = "not-applicable"\nreason = "x"\n\n[[deviation]]',
+        "duplicate row: testing_and_conventions A1.2",
+    ),
 }
 
 
@@ -108,13 +121,15 @@ def test_drift_reports_changed_source(tree, tmp_path):
     src = tmp_path / "src"
     (src / "src").mkdir(parents=True)
     git(src, "init", "-q", "-b", "main")
-    (src / "src" / "copied.txt").write_bytes((tree / "out" / "copied.txt").read_bytes())
+    for name in ("copied.txt", "new.txt"):
+        (src / "src" / name).write_bytes((tree / "out" / name).read_bytes())
     git(src, "add", "-A")
     git(src, "commit", "-q", "-m", "one")
     arg = f"grimoire-rs/grimoire={src}"
     r = run("drift", "--root", str(tree), "--checkout", arg)
     assert r.returncode == 0
-    assert "drift" not in r.stdout and "skipped out/new.txt" in r.stdout
+    assert "drift" not in r.stdout
+    assert "skipped .agents/research/research_repository_split_agent_config.md" in r.stdout
 
     (src / "src" / "copied.txt").write_text("changed\n")
     git(src, "commit", "-q", "-am", "two")
@@ -123,6 +138,24 @@ def test_drift_reports_changed_source(tree, tmp_path):
 
     r = run("drift", "--root", str(tree))
     assert "skipped out/copied.txt" in r.stdout and "drift" not in r.stdout
+
+
+def test_drift_reports_a_source_path_absent_at_head(tree, tmp_path):
+    src = tmp_path / "src"
+    src.mkdir()
+    git(src, "init", "-q", "-b", "main")
+    git(src, "commit", "-q", "--allow-empty", "-m", "empty")
+    r = run("drift", "--root", str(tree), "--checkout", f"grimoire-rs/grimoire={src}")
+    assert r.returncode == 0
+    assert "drift out/copied.txt: source unreadable at HEAD: src/copied.txt" in r.stdout
+
+
+def test_drift_reports_a_checkout_that_is_not_a_git_repository(tree, tmp_path):
+    plain = tmp_path / "plain"
+    plain.mkdir()
+    r = run("drift", "--root", str(tree), "--checkout", f"grimoire-rs/grimoire={plain}")
+    assert r.returncode == 0
+    assert "drift out/copied.txt: source unreadable at HEAD: src/copied.txt" in r.stdout
 
 
 def test_real_manifest():

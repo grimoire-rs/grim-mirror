@@ -22,7 +22,6 @@ wire-shape tests.
 
 from __future__ import annotations
 
-import gzip
 import hashlib
 import json
 import os
@@ -75,15 +74,6 @@ def _kind_from_artifact_type(artifact_type: str) -> str:
 
 def _sha256(data: bytes) -> str:
     return "sha256:" + hashlib.sha256(data).hexdigest()
-
-
-def registry_reachable(timeout: float = 2.0) -> bool:
-    """Whether the ``/v2/`` API endpoint answers."""
-    try:
-        with urllib.request.urlopen(f"{REGISTRY_BASE}/v2/", timeout=timeout) as resp:
-            return resp.status in (200, 401)
-    except (urllib.error.URLError, OSError):
-        return False
 
 
 def _put(url: str, data: bytes, content_type: str) -> str:
@@ -204,100 +194,6 @@ def push_artifact(
         _MANIFEST_MEDIA_TYPE,
     )
     return PublishedArtifact(repo=repo, tag=tag, digest=manifest_digest, kind=kind)
-
-
-def push_manifest(
-    repo: str,
-    tag: str,
-    layers: list[tuple[str, bytes]],
-    annotations: dict[str, str] | None = None,
-    *,
-    artifact_type: str | None = None,
-) -> str:
-    """Push a manifest over arbitrary ``(media_type, bytes)`` layers; return its digest.
-
-    Each layer blob is uploaded, in order, with no descriptor annotations; the
-    config is the OCI empty config. ``artifact_type`` is omitted unless given,
-    which is grim's own wire shape (:func:`push_artifact` adds one to exercise
-    the legacy read path).
-    """
-    config_blob = b"{}"
-    manifest: dict[str, object] = {
-        "schemaVersion": 2,
-        "mediaType": _MANIFEST_MEDIA_TYPE,
-    }
-    if artifact_type is not None:
-        manifest["artifactType"] = artifact_type
-    manifest["config"] = {
-        "mediaType": _OCI_EMPTY_CONFIG_MEDIA_TYPE,
-        "digest": _push_blob(repo, config_blob),
-        "size": len(config_blob),
-    }
-    manifest["layers"] = [
-        {"mediaType": media_type, "digest": _push_blob(repo, blob), "size": len(blob)}
-        for media_type, blob in layers
-    ]
-    if annotations:
-        manifest["annotations"] = annotations
-    manifest_bytes = json.dumps(manifest).encode()
-    _put(
-        f"{REGISTRY_BASE}/v2/{repo}/manifests/{tag}",
-        manifest_bytes,
-        _MANIFEST_MEDIA_TYPE,
-    )
-    return _sha256(manifest_bytes)
-
-
-def push_gzip_artifact(
-    repo: str,
-    tag: str,
-    tar_bytes: bytes,
-    kind: str,
-    *,
-    media_type: str = GRIMOIRE_GZIP_LAYER_MEDIA_TYPE,
-    annotate: bool = True,
-    uncompressed_digest: str | None = None,
-    blob: bytes | None = None,
-) -> PublishedArtifact:
-    """Push ``tar_bytes`` as a gzip-typed layer, the way grim's writer does.
-
-    The blob is ``gzip.compress(tar, mtime=0)`` (single member, no FNAME)
-    unless ``blob`` supplies hand-built bytes for a framing test. The layer
-    carries ``com.grimoire.uncompressed.digest`` = sha256 of ``tar_bytes``,
-    or ``uncompressed_digest`` verbatim to plant a lying or malformed claim;
-    ``annotate=False`` models a third-party gzip layer with no annotation.
-    """
-    layer_annotations = None
-    if annotate:
-        claim = uncompressed_digest or _sha256(tar_bytes)
-        layer_annotations = {UNCOMPRESSED_DIGEST_ANNOTATION: claim}
-    return push_artifact(
-        repo,
-        tag,
-        blob if blob is not None else gzip.compress(tar_bytes, mtime=0),
-        kind,
-        layer_media_type=media_type,
-        layer_annotations=layer_annotations,
-    )
-
-
-def tag_digest(repo: str, tag: str) -> str:
-    """Return the manifest digest a ``tag`` currently resolves to.
-
-    Issues a manifest ``GET`` (``HEAD`` is not universally enabled on
-    ``registry:2``) and reads the ``Docker-Content-Digest`` header — the
-    authoritative answer to "what does this floating tag point at right
-    now", used to assert a rolling release actually moved the cascade.
-    """
-    req = urllib.request.Request(
-        f"{REGISTRY_BASE}/v2/{repo}/manifests/{tag}",
-        headers={"Accept": _MANIFEST_MEDIA_TYPE},
-    )
-    with urllib.request.urlopen(req) as resp:
-        header = resp.headers.get("Docker-Content-Digest")
-        if header:
-            return header
-        return _sha256(resp.read())
 
 
 def fetch_manifest(repo: str, tag: str) -> dict:

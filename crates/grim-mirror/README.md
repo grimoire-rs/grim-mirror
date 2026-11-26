@@ -1,14 +1,15 @@
+<!-- doc_type: readme -->
 # grim-mirror
 
 Republishes skills, rules, agents and bundles from git repositories and
 Claude plugin marketplaces into an OCI registry, using `grim publish`.
 
-Status: Unstable until it has its own repository. Source only, no releases.
+Status: Unstable. Source only, no releases.
 
 ## Install
 
 ```sh
-cargo install --locked --git https://github.com/grimoire-rs/grimoire --rev <sha> grim-mirror
+cargo install --locked --git https://github.com/grimoire-rs/grim-mirror --rev <sha> grim-mirror
 ```
 
 ## Use

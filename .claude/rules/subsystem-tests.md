@@ -19,7 +19,6 @@ Pytest (not Rust integration tests) because acceptance tests exercise the real c
 | `test/tests/conftest.py` | Function fixtures local to `tests/`: `project_dir`, `grim_at` |
 | `test/src/` | `zot.py` (registry process), `registry.py` (stdlib OCI client), `runner.py` (`GrimRunner`), `git_fixture.py` (local upstream repositories), `helpers.py` (`write_config`, `make_artifact`), `assertions.py` |
 | `test/tests/test_mirror_*.py` | The ten mirror suites: bundles, cli, dialect, kinds, license, marketplace, monorepo, retire, staging, versions |
-| `test/tests/test_publish_mirror_table.py` | `publish.toml` `mirror` table as grim writes and reads it |
 | `test/tests/test_registry_required.py`, `test_accept_floor.py`, `test_accept_shard.py`, `test_text_io_hygiene.py` | Meta suites for the harness itself |
 | `test/tools/` | `accept_floor.py`, `accept_shard.py`, `require_all_passed.py` (CI floor, sharding, result check) |
 | `test/taskfile.yml` | Task runner: `build`, `default`, `quick`, `parallel`, `shard`, `floor`, `floor:warn` |

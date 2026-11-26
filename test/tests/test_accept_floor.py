@@ -349,7 +349,8 @@ def test_the_committed_limits_parse_and_the_floor_is_the_suite_scale() -> None:
         for name in floor.LIMIT_FILES
     }
 
-    assert limits["SUITE_FLOOR"] > 50
+    assert limits["SUITE_FLOOR"] >= 100
+    assert limits["SKIP_CEILING"] == 0
     assert limits["XFAIL_CEILING"] == 0
 
 

@@ -390,6 +390,62 @@ exit "$code"
         assert!(log.contains("sde: 1234") && log.contains("ceil: /ceil"), "{log}");
     }
 
+    #[test]
+    fn convert_0_yields_warnings_65_is_refused_other_is_error() {
+        let f = Fake::new();
+        f.set(
+            "convert.out",
+            r#"{"warnings":[{"file":"SKILL.md","line":12,"token":"${CLAUDE_PLUGIN_ROOT}"}],"dropped":[{"field":"hooks","reason":"unknown-field"}],"moved":[]}"#,
+        );
+        let out = convert(&f.driver(), Path::new("/s"), Path::new("/d"), Kind::Skill).unwrap();
+        assert_eq!(
+            out,
+            ConvertOutcome::Converted {
+                warnings: vec![
+                    Warning {
+                        code: "body-token".into(),
+                        message: "SKILL.md:12 ${CLAUDE_PLUGIN_ROOT}".into()
+                    },
+                    Warning {
+                        code: "field-dropped".into(),
+                        message: "hooks (unknown-field)".into()
+                    },
+                ]
+            }
+        );
+
+        let r = Fake::new();
+        r.set("convert.code", "65");
+        r.set("convert.err", "bad frontmatter\n");
+        assert_eq!(
+            convert(&r.driver(), Path::new("/s"), Path::new("/d"), Kind::Skill).unwrap(),
+            ConvertOutcome::Refused("bad frontmatter".into())
+        );
+
+        let o = Fake::new();
+        o.set("convert.code", "74");
+        assert_eq!(
+            convert(&o.driver(), Path::new("/s"), Path::new("/d"), Kind::Skill)
+                .unwrap_err()
+                .code,
+            Some(74)
+        );
+    }
+
+    #[test]
+    fn convert_passes_the_unit_kind_and_refuses_the_rest() {
+        for (kind, want) in [(Kind::Agent, "agent"), (Kind::Skill, "skill"), (Kind::Rule, "rule")] {
+            let f = Fake::new();
+            f.set("convert.out", "{}");
+            convert(&f.driver(), Path::new("/s"), Path::new("/d"), kind).unwrap();
+            assert!(f.log().contains(&format!("--kind {want}")), "{want}: {}", f.log());
+        }
+        let f = Fake::new();
+        let e = convert(&f.driver(), Path::new("/s"), Path::new("/d"), Kind::Bundle).unwrap_err();
+        assert!(e.message.contains("cannot convert a Bundle unit"), "{}", e.message);
+        assert!(f.log().is_empty(), "grim must not be spawned: {}", f.log());
+    }
+
     fn pitem(status: PublishStatus, digest: Option<&str>) -> PublishItem {
         PublishItem {
             name: "pdf".into(),

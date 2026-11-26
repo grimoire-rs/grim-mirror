@@ -6,10 +6,6 @@ on:
 # Every job names its own scopes; nothing is granted here.
 permissions: {}
 
-# Same pin as verify-basic: the grimoire commit grim is built from.
-env:
-  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
-
 # Linux and macOS only. Windows is not built, on purpose: the acceptance suites
 # of this repository skip there (they drive `git` and `grim` through unix process
 # handling, and the unit tests that fake `grim` are `cfg(unix)`), so a Windows
@@ -40,7 +36,6 @@ jobs:
       - name: Build grim
         uses: ./.github/actions/build-grim
         with:
-          commit: ${{ env.GRIM_COMMIT }}
           artifact: grim-${{ matrix.job.target }}
       - name: Install nextest
         uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3

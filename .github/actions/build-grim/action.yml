@@ -1,10 +1,7 @@
 name: Build grim
-description: Build the grim binary the acceptance suites run against, from a pinned grimoire commit, and upload it as an artifact.
+description: Build the grim binary the acceptance suites run against, from the grimoire commit pinned in .github/grim-commit (the caller checks this repository out first), and upload it as an artifact.
 
 inputs:
-  commit:
-    description: Full commit SHA of grimoire-rs/grimoire to build
-    required: true
   artifact:
     description: Name of the uploaded artifact
     required: true
@@ -12,11 +9,15 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Read grim pin
+      id: pin
+      shell: bash
+      run: echo "commit=$(tr -d '[:space:]' < .github/grim-commit)" >> "$GITHUB_OUTPUT"
     - name: Checkout grimoire
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: grimoire-rs/grimoire
-        ref: ${{ inputs.commit }}
+        ref: ${{ steps.pin.outputs.commit }}
         path: grimoire-src
         # grim's build needs external/docker_credential and external/rust-oci-client.
         submodules: recursive
@@ -26,7 +27,7 @@ runs:
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: grimoire-src/target/release/grim
-        key: grim-${{ runner.os }}-${{ runner.arch }}-${{ inputs.commit }}
+        key: grim-${{ runner.os }}-${{ runner.arch }}-${{ steps.pin.outputs.commit }}
     - name: Install Rust Toolchain
       if: ${{ steps.cache.outputs.cache-hit != 'true' }}
       # Toolchain of this repository; grim's own rust-toolchain.toml is
@@ -34,6 +35,12 @@ runs:
       uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
       with:
         cache: false
+    - name: Rust Cache
+      if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+      uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+      with:
+        workspaces: grimoire-src
+        save-if: ${{ github.ref == 'refs/heads/main' }}
     - name: Build grim
       if: ${{ steps.cache.outputs.cache-hit != 'true' }}
       shell: bash

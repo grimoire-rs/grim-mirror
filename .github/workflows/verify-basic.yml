@@ -9,13 +9,6 @@ on:
 # Every job names its own scopes; nothing is granted here.
 permissions: {}
 
-# The grimoire commit the acceptance suites build `grim` from. Until the
-# grim-sdk crate lands on grimoire's main this is the head of the branch that
-# carries the plugin dispatch and `grim convert` the suites rely on; move it to
-# a main commit when that merges.
-env:
-  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
-
 # Superseded pushes to a feature branch stop burning runners; main never
 # cancels, so every landed commit keeps a complete result.
 concurrency:
@@ -77,10 +70,12 @@ jobs:
           persist-credentials: false
       - name: Setup Task
         uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
-      - name: Install cargo-deny
-        uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3
+      - name: Setup OCX
+        # Activates the root ocx.toml: cargo-deny runs through `ocx exec`.
+        uses: ocx-sh/setup-ocx@25fa771f8572572dc64528db89560de68a163a0e # v1.4.0
         with:
-          tool: cargo-deny
+          version: "0.6.8"
+          groups: default
       # Its own job, not a step in smoke: neither check needs the compiled
       # binary, both finish in well under a minute, and a dependency-licence
       # failure should not be reported as "the build broke".
@@ -108,8 +103,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      checks: write
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -150,17 +143,17 @@ jobs:
           compression-level: 0
           retention-days: 3
       - name: Build grim
-        # grim at the pinned grimoire commit, cached on that commit.
+        # grim at the grimoire commit in .github/grim-commit, cached on it.
         uses: ./.github/actions/build-grim
         with:
-          commit: ${{ env.GRIM_COMMIT }}
           artifact: grim-binary
-      - name: Publish Unit Test Results
+      - name: Upload Unit Test Report
         if: ${{ !cancelled() }}
-        uses: EnricoMi/publish-unit-test-result-action@da5b7be67623cd59bbbd1a0ce4f022050a55605f # v2.26.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          files: target/nextest/ci/junit.xml
-          check_name: "Unit Test Results"
+          name: unit-junit
+          path: target/nextest/ci/junit.xml
+          retention-days: 3
       - name: Check lint results
         if: ${{ !cancelled() }}
         env:
@@ -171,6 +164,28 @@ jobs:
             echo "::error::Lint checks failed (fmt=$FMT, clippy=$CLIPPY)"
             exit 1
           fi
+
+  # No checkout and no repo code: the write scopes never meet a build.
+  unit-results:
+    name: Unit Test Results
+    needs: smoke
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+    steps:
+      - name: Download Unit Test Report
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: unit-junit
+          path: junit
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@da5b7be67623cd59bbbd1a0ce4f022050a55605f # v2.26.0
+        with:
+          files: junit/junit.xml
+          check_name: "Unit Test Results"
 
   # Four shards, one merge, one published check: acceptance.yml.
   acceptance-tests:

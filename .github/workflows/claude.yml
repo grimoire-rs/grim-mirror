@@ -13,10 +13,14 @@ jobs:
     # Gate: only repo members and owners can trigger Claude
     if: |
       (
-        github.event.comment.author_association == 'MEMBER' ||
-        github.event.comment.author_association == 'OWNER' ||
-        github.event.issue.author_association == 'MEMBER' ||
-        github.event.issue.author_association == 'OWNER'
+        (
+          github.event_name != 'issues' &&
+          (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER')
+        ) ||
+        (
+          github.event_name == 'issues' &&
+          (github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'OWNER')
+        )
       ) &&
       (
         (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
