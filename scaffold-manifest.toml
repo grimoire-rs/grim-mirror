@@ -1,0 +1,4543 @@
+[source]
+repository = "grimoire-rs/grimoire"
+
+[[file]]
+path = ".agents/research/research_repository_split_agent_config.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/research/research_repository_split_agent_config.md"
+source_commit = "untracked"
+mode = "copied"
+sha256 = "f673c1f7d77154ea649b9b898b213ae31cbf786eb12de3de6439dd753135994f"
+
+[[file]]
+path = ".agents/research/research_repository_split_testing_and_conventions.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/research/research_repository_split_testing_and_conventions.md"
+source_commit = "untracked"
+mode = "copied"
+sha256 = "b97b5d3e3798c92bc1af4912d8f9b366008ba545c1dd70564b59af917916ebfb"
+[[file]]
+path = ".agents/README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/README.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6155f7e85ece56b4290b67afb7ebe0ee642967b80921334481fc55caf596caae"
+
+[[file]]
+path = ".agents/adr/adr_artifact_mirroring.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/adr/adr_artifact_mirroring.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f42c6e39be24cebe60d9f4b399f15af18d5e3c438482f40143628f7e10323c46"
+
+[[file]]
+path = ".agents/memory/hex.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/memory/hex.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2423d327185a755b160b51f55be5a1264c2f83f506d862a4994ca55fb162ce71"
+
+[[file]]
+path = ".agents/plans/plan_artifact_mirroring.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/plans/plan_artifact_mirroring.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "4220a88c371defd6c5b95b6a837e151a3f3fbb0e34ea09b7221ef7c3e95ffef3"
+
+[[file]]
+path = ".agents/specs/design_artifact_mirroring.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/specs/design_artifact_mirroring.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5bfe22d06f60f68e704c0efb321b19d61a601048e8b43f386aab1b89b5d5cc4f"
+
+[[file]]
+path = ".claude/hooks/conventional_commit_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/conventional_commit_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "9eaf6a9011383b8c1d151a04937688cae0163be6d6377cdb4fb74e0a8c86a3f6"
+
+[[file]]
+path = ".claude/hooks/hook_utils.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/hook_utils.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "891f0ef2279d795f376ef7d4b6b5a95b3f33986511aad4466eb459f02a95f5fb"
+
+[[file]]
+path = ".claude/hooks/post_tool_use_tracker.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/post_tool_use_tracker.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "fc05384aa5ae2fcb7c1a86d0c15adadad6bafdd44e90db2005c4559a4a72f00e"
+
+[[file]]
+path = ".claude/hooks/pre_commit_verification.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_commit_verification.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "978758b36a5ce61d84424a8655a72b0d9614299bae04286761068a4b406269d5"
+
+[[file]]
+path = ".claude/hooks/pre_push_main_blocker.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_push_main_blocker.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "338bb0ff8045a415636ea224435586e82485ff484a8d6062df7e418ca8583e8d"
+
+[[file]]
+path = ".claude/hooks/pre_tool_use_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_tool_use_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "1c51ef52095b6fb4a9e67e93690894362a91b838c2aaf3013560b3989b1b54be"
+
+[[file]]
+path = ".claude/hooks/session_start_loader.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/session_start_loader.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "596260ebf7c9b2266dd10ed2348ceaa97babd4d94864617c371bdfd7728432ff"
+
+[[file]]
+path = ".claude/hooks/stop_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/stop_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d45cc2f5e403998943b5fe3b8dc8cef75df9e62eac1add6b0a7b89f491db2838"
+
+[[file]]
+path = ".claude/hooks/subagent_stop_logger.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/subagent_stop_logger.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b8f3c43ef2cabbd2ee035cdb3346fa9dabdb160b2ed6c4b457f84ed04402680a"
+
+[[file]]
+path = ".claude/hooks/user_prompt_router.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/user_prompt_router.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "dd7501d6c39fa762adf5c26f5f608a379fe7db1752f7182c8db8a801d6979000"
+
+[[file]]
+path = ".claude/rules.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "9fac9342ebb7515e8751a67adcea83c54ff1942e9f1bb2b987298fb1bd1dff6c"
+
+[[file]]
+path = ".claude/rules/arch-principles.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/arch-principles.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "746a592179aa461032f53cd52900d0e6eff5ed66dafd5b022ec0c27b8253e93b"
+
+[[file]]
+path = ".claude/rules/arch-threat-model.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/arch-threat-model.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2ff850179ce0c66c06781cac1acba4e47a5c905991e36f5f315e2d000eafbd79"
+
+[[file]]
+path = ".claude/rules/meta-ai-config.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/meta-ai-config.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "201d5b8ed52ff3eff6f420fcdbc20429afa054730792510a5b71efde7a5d7da5"
+
+[[file]]
+path = ".claude/rules/product-context.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/product-context.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "a06caf6c95054143d708fd5085eca0b76660d6a95c1c2f1c8f777908e13e4ceb"
+
+[[file]]
+path = ".claude/rules/product-tech-strategy.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/product-tech-strategy.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "0597815738967f49d776ad647fc2c2a2f2babeb125de0e738c29fac63da81c33"
+
+[[file]]
+path = ".claude/rules/quality-bash.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-bash.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b736386c08ac2e1eafbabc65a7a9b0c419fe26c373e0c1c9171c5f27a04f9277"
+
+[[file]]
+path = ".claude/rules/quality-core.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-core.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "5fbcc8b126bca2713e1f022569da6f22a1393c099cf3c22b2cb8f43a0dde628e"
+
+[[file]]
+path = ".claude/rules/quality-python.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-python.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d4adea79eac0a189dabe6749baa38aeda98bfeae470d61363f27e0abe2f565d4"
+
+[[file]]
+path = ".claude/rules/quality-rust-errors.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust-errors.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b0f175ae8f323bae52cd9284f11789488c63dd0474a14819549aa0cc3d1bf0d5"
+
+[[file]]
+path = ".claude/rules/quality-rust-exit_codes.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust-exit_codes.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d5b8811ec5cd8dc09b7e11ba526e9efc696b0c100ac39cfa2a48d1a0950be0b8"
+
+[[file]]
+path = ".claude/rules/quality-rust.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6ecb8099f9dbcb4c52618bb773dc2d55f96430c0533bfc48a01aa675d92997eb"
+
+[[file]]
+path = ".claude/rules/quality-security.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-security.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "c01c98837dc9e2b435679fbbc28a32fb54aa587c5dce329b5b158da3dff534a2"
+
+[[file]]
+path = ".claude/rules/subsystem-ci.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-ci.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ac6053efe8e9b139ac6fbc0e6d1c651e859166e15807a9e3704b5fe70a382729"
+
+[[file]]
+path = ".claude/rules/subsystem-cli-api.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-cli-api.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "a102e5e8870da7c2b330243e1584c565d77c29ac72ca0664104d966f301ed25f"
+
+[[file]]
+path = ".claude/rules/subsystem-cli.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-cli.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "113c9c54e6b7179dc7faa9dd93d7f3393d647d503b535215ca7bfbc1f9eb4ab4"
+
+[[file]]
+path = ".claude/rules/subsystem-mirror.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-mirror.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "5447eb5c23f1d323b675acf8504bf5ca6a9fc03fb56f7957f0ddc0d772f296e9"
+
+[[file]]
+path = ".claude/rules/subsystem-taskfiles.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-taskfiles.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "c2c051b222c26ad13c5cdc5c38f792cef16bba4e0095baa4b288ecfd2f4962ab"
+
+[[file]]
+path = ".claude/rules/subsystem-tests.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-tests.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "51f8620919c757c2889df8266755ea9bffd918ac3a2837ba01990ad07ac31be1"
+
+[[file]]
+path = ".claude/rules/workflow-bugfix.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-bugfix.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "61cd5970badb3f60c14b4484a4505b760c8a20aa801bbc4e054e8ab0399ea916"
+
+[[file]]
+path = ".claude/rules/workflow-feature.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-feature.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2374897aa41ec321bea6036faad134bdbf301b963ff75a424ec30998f70f8f38"
+
+[[file]]
+path = ".claude/rules/workflow-git.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-git.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "91e94f752c4dec677171966b0e32442cd4241e4b7a92d3ec2b1b08d2e20e6947"
+
+[[file]]
+path = ".claude/rules/workflow-github.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-github.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "622960801fc50e8e8fe0c96a303ed7bb0399528c8f22cab3a182679b666a696f"
+
+[[file]]
+path = ".claude/rules/workflow-intent.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-intent.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "7fd737fdbd33b0931aee0725256151c28f7b6ade848f692233e17f3646a89ea3"
+
+[[file]]
+path = ".claude/rules/workflow-refactor.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-refactor.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ea8eaa7337ee795e6fdb2b1b7db4fbdabc83a9d282275c0b6c76af2ce4bcb847"
+
+[[file]]
+path = ".claude/scripts/README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/README.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "86ae7187218dbcda5726b8c1bfa7244a362f7f93024292996835a84ee44939f4"
+
+[[file]]
+path = ".claude/scripts/statusline-install.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/statusline-install.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "eaf90166bb9ac50c2a748bd25109daf61f3f6af6cd3d4f59caae5806b849d3cc"
+
+[[file]]
+path = ".claude/scripts/statusline.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/statusline.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "bdf9795a1b3350e58c56695097cb53dbe575e948a8756dddbbdd97836021b5a1"
+
+[[file]]
+path = ".claude/scripts/sync-canonical-blocks.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/sync-canonical-blocks.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "0052cd7345b95f88d0547959c1be61aef8233db1640ec04e06f0837ee6dc4e7a"
+
+[[file]]
+path = ".claude/settings.json"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/settings.json"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8e493737b26ac69226bcee2eee5e34a5bfd97b61ed4019a0aa0a8e9709550977"
+
+[[file]]
+path = ".claude/skills/bugfix/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/bugfix/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "20942bc18c96b46d1a2a6214df14f1d66de3825221d34da3e75d385eacde4731"
+
+[[file]]
+path = ".claude/skills/builder/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/builder/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "312a20a195b779296f0d24872c4e3cc0b2e5539f132beaa61dedb0b798e874bc"
+
+[[file]]
+path = ".claude/skills/code-check/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/code-check/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b035020c753bca46ab4bda8e6e672d3c9bfda6f5baa73ff184869e8bbe4661b3"
+
+[[file]]
+path = ".claude/skills/commit/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/commit/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "d8d44489a7243747ec06f6c2c91ab4dfead56bbdcb227e6854dd0111a6958fc4"
+
+[[file]]
+path = ".claude/skills/commit/commit_reference.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/commit/commit_reference.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "695d803694d3882bb82696fe5947ce3488610a786e5e4f9d00c03a591822f842"
+
+[[file]]
+path = ".claude/skills/finalize/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/finalize/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b94d4e5d6fa4747451d4ad0892f3a15eea2cd2ae944a4df3a14cea7d33ae78c2"
+
+[[file]]
+path = ".claude/skills/fix/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/fix/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "2e49001c831aca1006f852664f6e0c6a0a4fa414c5a22c1b0cf5eb2e19a99c5e"
+
+[[file]]
+path = ".claude/skills/meta-maintain-config/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/meta-maintain-config/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "77795eb75b3dcaaa46eb504d038ea0cb257b45b4a64e8be2fa0b710aa963f8a3"
+
+[[file]]
+path = ".claude/skills/meta-validate-context/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/meta-validate-context/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8fc95f21971a62de7a42f57bf362bd344ec77c83496c389d3ab635be6ba49170"
+
+[[file]]
+path = ".claude/skills/next/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/next/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "32ce5cef51e7b936588f58a48986635ff51026aaf0d4c6ec2ef6eec0d5f9dbc2"
+
+[[file]]
+path = ".claude/skills/outside-pr-review/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/outside-pr-review/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ec69e276b74a9db4c5663df174983982598ed8bfe581a63fd9ced36714830e8c"
+
+[[file]]
+path = ".claude/skills/outside-pr-review/scripts/pr_scan.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/outside-pr-review/scripts/pr_scan.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "4b6d74699268b55099b49309b15cc4f22af0d47ac6dd6db6953bb354a1b057ea"
+
+[[file]]
+path = ".claude/skills/qa-engineer/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/qa-engineer/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f44cbbc03b40afd8a03b76993e244b1abfda8937a41eb944a35c9aed350fe998"
+
+[[file]]
+path = ".claude/skills/rca/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/rca/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f78b85946cd24fb38eb38c2bd91c6ceb129be5dcec1bd84376f5c201109f0c34"
+
+[[file]]
+path = ".claude/skills/rca/references/sizing.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/rca/references/sizing.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "7cbe01d4dd2a79c75e320d3da81913347b31773fe1be67570cb2260d1e0e4b3d"
+
+[[file]]
+path = ".claude/skills/security-auditor/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/security-auditor/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b29d8085f14c7374ace8928f755552cf6d0e018673ef985c39994e4a855b0b3b"
+
+[[file]]
+path = ".claude/taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "68dc3da072f6f2ccdf70091e4a3ce48cb853f45161cc76a68fc625bb3383bd8c"
+
+[[file]]
+path = ".claude/templates/artifacts/adr.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/adr.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d2fa5687bea07ee1fe0fba399898ba51037276bd538a1d74c0fc7269f63196c2"
+
+[[file]]
+path = ".claude/templates/artifacts/bugfix_plan.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/bugfix_plan.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e926b2a6fd2f9e3ffb644350f293908e252a4c28cd3afd6bb771f2f938e96ef1"
+
+[[file]]
+path = ".claude/templates/artifacts/design_spec.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/design_spec.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6dc3b42cf2c14ef6410a47de67a2eb539038cf0b50dcffa0ff769d49035321ce"
+
+[[file]]
+path = ".claude/templates/artifacts/plan.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/plan.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "595ab12f30e9fbc8d618bbc969f74b50999c27e035958ce436005f558908343d"
+
+[[file]]
+path = ".claude/templates/artifacts/postmortem.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/postmortem.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "3e19c11db5e5dd260393f972329a347b49e7478af114117700b1e15ca8762754"
+
+[[file]]
+path = ".claude/templates/artifacts/pr_faq.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/pr_faq.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "c292f2f3065d2978bb9f1fba69a0ae56dbff547076d754e5b74c0f08e11480db"
+
+[[file]]
+path = ".claude/templates/artifacts/prd.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/prd.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e412c8001ff3516bb35beef42ba89ce38ca94b1e4b93f7cef9be72cfe89886f7"
+
+[[file]]
+path = ".claude/templates/artifacts/research.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/research.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "be7c966af02b9971d2f83ea7036ad56366d1057bcfe8ab166cb5afcd0fd7c4b7"
+
+[[file]]
+path = ".claude/templates/artifacts/roadmap.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/roadmap.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d438ce2517d9bdf9552557433ae1ac5c4573aa43b7a9f334afe55c4d48ebc466"
+
+[[file]]
+path = ".claude/templates/artifacts/security_audit.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/security_audit.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d440c1287010b7b580937ec87a6c90bbaacf042a82f54994a962f488a3eb5e69"
+
+[[file]]
+path = ".claude/templates/artifacts/system_design.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/system_design.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "ee7f32820a1f99a6a33391bd0925ecf70887c61e31d82220701b27004f30d1ec"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/command.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/command.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e910d25e1650347cc8f84ba00b80bc389be750e89189fabd3e70716c8ab9fab1"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/hook.template.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/hook.template.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "52aee77a5699445b2a920698cc3bd4f90adedc7328f26cb684e3020ebe64928e"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/rule.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/rule.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "93688db06bffee0fd3a52555355c5f6dab3605bf9a398587066de36cccb1ed23"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/skill.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/skill.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "9477038a1c9a5dc05c74ccb2991e68b1a3ceab03b4f448f870187ed9abddc1a6"
+
+[[file]]
+path = ".claude/tests/pyproject.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/pyproject.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "12c21c1f7df37b03b2dff5bfc4bec73f7cf8d3e49f2589df148d6ad8bb695900"
+
+[[file]]
+path = ".claude/tests/test_ai_config.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/test_ai_config.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "0c87e162bfd79c3c107071a469e110920f1ebbb1209d7913e1c08ef5b9fb4fff"
+
+[[file]]
+path = ".claude/tests/test_hooks.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/test_hooks.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6c92d11fd4bf076a5ab412ce14ac288d8607e19159996734410549c3edefc6d4"
+
+[[file]]
+path = ".claude/tests/uv.lock"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/uv.lock"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "3d5244ceb17636fdbf0118e62fa34dfa92e3890d92887ed84f629f3d0776c7a6"
+
+[[file]]
+path = ".github/CODEOWNERS"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/CODEOWNERS"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "cc03523dd81886b93e3fad943bb193ad98b2ac9128656216e8cad837965c3a4f"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/bug_report.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/bug_report.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "cae0d9e1c807892e443454b13e342a43304c434c21cf996dbf8d03466e25d142"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/config.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/config.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "15d309c36e52b643521058c4fab7ef7ceb4458b33733bca96ee0861a8732fa5c"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/feature_request.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/feature_request.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "33afd55fa61fce9d6bd96b3d8669a521740ff279385c8e0c706279727aa144e2"
+
+[[file]]
+path = ".github/actions/build-mirror/action.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/actions/build-rust/action.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "43fd011e198c10e21e8d75ca7d7fd4e0c160cfb9013f4b605f4ef3a44ee5c4c4"
+
+[[file]]
+path = ".github/dependabot.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/dependabot.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "00a3715693f291787232f243b9296f065637300922f45899c545eb58e2667c9a"
+
+[[file]]
+path = ".github/workflows/acceptance.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/acceptance.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f129f7783375d216bc2febbfc00a8ba877de3894f3dd7f679ac5b282f5ff2672"
+
+[[file]]
+path = ".github/workflows/claude.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/claude.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "c818a94926b77e22fafbabf3f1b9e86c73e2efce683348920693b94ee8fd0b76"
+
+[[file]]
+path = ".github/workflows/verify-basic.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/verify-basic.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "854accc370ad5bd231ab41f1029fe9d1f845335f5691a970e74570cbd52c8de6"
+
+[[file]]
+path = ".github/workflows/verify-deep.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/verify-deep.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6752654724c3e5166640bee9e412b9494897afe072f4d8548779a2bacc32dd1e"
+
+[[file]]
+path = "AGENTS.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "AGENTS.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b73a9452ce1f92817958fde15f7ebf35de7def64022ec9590cfbe35153a660f1"
+
+[[file]]
+path = "CLAUDE.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CLAUDE.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "1463ece9016bab9728b0e970bc253802ddbfb60d5219169b8b837bfe25e9e754"
+
+[[file]]
+path = "CODE_OF_CONDUCT.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CODE_OF_CONDUCT.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "09f1cbea5588ef83815621d6aeb3b5948c835834d7f32d091895a37789e84425"
+
+[[file]]
+path = "CONTRIBUTING.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CONTRIBUTING.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "768b889c01eb80e601f3443dfb3a27d0311a4c549728a08ce64976e26b7a61af"
+
+[[file]]
+path = "README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/README.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "1e4234bd88a7a9f49cd138ff7cadc9a510e950fa477461d32cfd8c990e18fc71"
+
+[[file]]
+path = "SECURITY.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "SECURITY.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "dbb7cb11951e952c91720117253a6eec4018ad1ebeda5161af3c5efb5a3706bb"
+
+[[file]]
+path = "docs/mirroring.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "docs/src/content/docs/mirroring.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "1e505232afa059c3d452464d749e9aae031b5d65967c3314e19aa8882d1b9cac"
+
+[[file]]
+path = "grimoire.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "grimoire.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "a1efe620e1edf66b741f3a29d2e8cee44c86af573676d6057a0d229c8f9b11ff"
+
+
+[[file]]
+path = "rust-toolchain.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "rust-toolchain.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d2b591fd4f5d41ac50680b9b5d75113a954ac5e1ed9d0e99018babcfd85be043"
+
+[[file]]
+path = "rustfmt.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "rustfmt.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e090969e99df9360705680cc0097cfaddae10c22dc2e01470592cf3b9787fd36"
+
+[[file]]
+path = "taplo.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taplo.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "c144033254902c44c4e9ec16f79902d87df469688c21a445dcecdb8ab21153b2"
+
+[[file]]
+path = "cog.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "cog.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "61db312ade1f0595e61c3961f89782c976a54ca385689cade39b03e6fda82e5b"
+
+[[file]]
+path = ".taskrc.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".taskrc.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b492357e86cede567ee8305afb9cf8a4cbe5b5595b55f6145e0d690b1c62d02c"
+
+[[file]]
+path = "LICENSE"
+source_repo = "grimoire-rs/grimoire"
+source_path = "LICENSE"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6fcdfefa06ae4e80a1ea2c37e92e86f8aa1dd17415b4b108462ed4ca17b30b1b"
+
+[[file]]
+path = "Cargo.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "Cargo.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "de6960d3726bdd32dbc45dd288d5499f4356463c7620a17b1f7590d0f7d74f21"
+
+[[file]]
+path = "deny.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "deny.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f99533a0cb165bee7d412c32923641ea1bf846c8f2ec9c8b3d37b09037720706"
+
+[[file]]
+path = ".licenserc.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".licenserc.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "253881fd08b670839dd0a9dfead3834022569d157008abb0e63b2d5b27ba27c9"
+
+[[file]]
+path = ".config/nextest.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".config/nextest.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2abed55ff361cb72a54fb3c3e44ba0e492cca9da23bd9edd3403f562494e1d15"
+
+[[file]]
+path = "taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "12fac30f89e0a6898415c3930e0f3143b7bb1e2fd4c7902cfac7e2807a288ed1"
+
+[[file]]
+path = "taskfiles/git.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/git.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "2c8c033b92073d0ffde4b4b1b550f24e38fdb221928428235e2499f2f39992b3"
+
+[[file]]
+path = "taskfiles/coverage.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/coverage.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "8296fc4e09fae5d37c8f47e59f003a7b2fb4a7241ab784ef79b0c56d87c71dfc"
+
+[[file]]
+path = "taskfiles/rust.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/rust.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "55084cee5cca69f861fd7f4c06712b28895ee9f3691ecfdc81c3c045ae994bc0"
+
+[[file]]
+path = "taskfiles/shell.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/shell.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "4a93bc5c4e21506aba18ff9c831751d2ecb7c6437f40a3f8a7b80aa9031f55eb"
+
+[[file]]
+path = ".gitattributes"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".gitattributes"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "c18b90b7b7599d534c2102b3ea1b36b7ae1e9f5630f5ebac2e55eee8cb0a3de2"
+
+[[file]]
+path = "crates/grim-mirror/Cargo.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/Cargo.toml"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "af09948fd510847923fce2e1d9e196be09ac65e58bb43d15f86a5815f3ae9852"
+
+[[file]]
+path = "crates/grim-mirror/README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/README.md"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "1e4234bd88a7a9f49cd138ff7cadc9a510e950fa477461d32cfd8c990e18fc71"
+
+[[file]]
+path = "crates/grim-mirror/examples/mirror.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/examples/mirror.toml"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "6019e771183bc0225f9e6a6459fe1578916d50f1288b0470e8d6e31c0f29f37f"
+
+[[file]]
+path = "crates/grim-mirror/licenses/0BSD.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/0BSD.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e3f18c71e10d673590eb9856c1d79dd3b4b0d65404efb5e8584dbede7edd608b"
+
+[[file]]
+path = "crates/grim-mirror/licenses/AGPL-3.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/AGPL-3.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+
+[[file]]
+path = "crates/grim-mirror/licenses/Apache-2.0-noappendix.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/Apache-2.0-noappendix.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b9d74ce5950bd18522b2fd591222591f4464df2fa1c60d55fe6d03bf429df571"
+
+[[file]]
+path = "crates/grim-mirror/licenses/Apache-2.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/Apache-2.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+
+[[file]]
+path = "crates/grim-mirror/licenses/BSD-2-Clause.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/BSD-2-Clause.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f32fb3b417a194167cfad068223fc975ba96c5960513a10f66a3c28720aec1df"
+
+[[file]]
+path = "crates/grim-mirror/licenses/BSD-3-Clause.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/BSD-3-Clause.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5a93d5831e1297ab10fe643e1a631e83be392896da14ee2951285a79012df69d"
+
+[[file]]
+path = "crates/grim-mirror/licenses/CC0-1.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/CC0-1.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+
+[[file]]
+path = "crates/grim-mirror/licenses/GPL-2.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/GPL-2.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3"
+
+[[file]]
+path = "crates/grim-mirror/licenses/GPL-3.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/GPL-3.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0"
+
+[[file]]
+path = "crates/grim-mirror/licenses/ISC.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/ISC.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f2ec607f67bb0dd3053b49835b02110d5cd0f8eb6da3aac4dc0b142a6b299be9"
+
+[[file]]
+path = "crates/grim-mirror/licenses/LGPL-2.1.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/LGPL-2.1.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
+
+[[file]]
+path = "crates/grim-mirror/licenses/LGPL-3.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/LGPL-3.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "996af0513df21f7496288951c41428a03c174e9e4a9d63665c57d670f845ccb1"
+
+[[file]]
+path = "crates/grim-mirror/licenses/MIT-0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/MIT-0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "59746d6285ffa44bfc7ecada352aa5d6a20dc8eab418a60ce091cc739012c135"
+
+[[file]]
+path = "crates/grim-mirror/licenses/MIT.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/MIT.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+
+[[file]]
+path = "crates/grim-mirror/licenses/MPL-2.0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/MPL-2.0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+
+[[file]]
+path = "crates/grim-mirror/licenses/Unlicense.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/licenses/Unlicense.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "0bdebfeda07d45dada625ae1317c6f833186e798b171d0db640bcf32e92a8240"
+
+[[file]]
+path = "crates/grim-mirror/src/bundle.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/bundle.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "c87cee9bdab129185c3fb3215edb80992a59d0429357d885d0fd768b2fab9857"
+
+[[file]]
+path = "crates/grim-mirror/src/cli.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/cli.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "4c08c2c25f42c35e38ed4163835d4af4f5e9c52f19138bbe3999918d6b7cf231"
+
+[[file]]
+path = "crates/grim-mirror/src/enumerate.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/enumerate.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "c9f9f3ba35e10b3e0fa39b656945a343a20b9030a827a60556f6e97026137e7e"
+
+[[file]]
+path = "crates/grim-mirror/src/git.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/git.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "e3d0e7963cfb71eb9ac12dc19750b66b09d65e37e674f3b2f34a1f4573882b2a"
+
+[[file]]
+path = "crates/grim-mirror/src/license.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/license.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e58b58f1a99a44ef43fe007e3519b3a5ed1c77db0782308f4d8f18f48b8cd02b"
+
+[[file]]
+path = "crates/grim-mirror/src/main.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/main.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "6613616a7437ee6adc394694909290259d43a01e3926a1107d53ca6754cd7c50"
+
+[[file]]
+path = "crates/grim-mirror/src/marketplace.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/marketplace.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "bba1c23316109bb8a72053f8f9bbae97e2cd77fabd45e9ad9608078aec269d19"
+
+[[file]]
+path = "crates/grim-mirror/src/model.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/model.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "86341140e0ab90dac6f26a515917d5a76b56437b283039c9556d2af0ce4e5a7b"
+
+[[file]]
+path = "crates/grim-mirror/src/publish.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/publish.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "a08870086748630700bbcc3df1a2f0db56071e0d0beb566bbda5cbcc2df1b2be"
+
+[[file]]
+path = "crates/grim-mirror/src/report.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/report.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "9390b01b16eba03a55f1237854812619e04006a62392fe52d6c26111dd831f74"
+
+[[file]]
+path = "crates/grim-mirror/src/retire.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/retire.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "80ea0a3aeb5daec4734993851433e401794e855c5c2452c19dc5f222ca5f0851"
+
+[[file]]
+path = "crates/grim-mirror/src/run.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/run.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "7f152c9e57886faa7099a970031a37fb252e636204803d06e02c4b4b85e3c2d4"
+
+[[file]]
+path = "crates/grim-mirror/src/spec.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/spec.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "6076514f0616409cade5ddacaab9a9a2c90e1e06b827762ae1a23ec3cef0316f"
+
+[[file]]
+path = "crates/grim-mirror/src/stage.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/stage.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "e96ca14fd97db7528ece38d41dea3d739b8390338ce3057755f8717799a0822a"
+
+[[file]]
+path = "crates/grim-mirror/src/version.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/src/version.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "d7552c8ee533761a68a6df1cfcf45af3096048b34a6a85358e4e5d9720b87546"
+
+[[file]]
+path = "crates/grim-mirror/tests/boundary.rs"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/boundary.rs"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "c761d2a665c2088e37e8d926c76a8badd16e9edac99a345220e19b6f5ba289b2"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/0bsd.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/0bsd.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "4ccba4f8872f812a12f1e77072d2038f3d3a1a0a0fad4ff79cd32f5350aa4e00"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/0bsd.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/0bsd.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "32368c372f121de88d63fd9d210cf531c13c97bdde45d94c5f2b10240ef40faf"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/0bsd.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/0bsd.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "227809374c9b800e3ffa539a0f912cd126ed74d06995f84b034d2055bb52e66a"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/0bsd.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/0bsd.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e3f18c71e10d673590eb9856c1d79dd3b4b0d65404efb5e8584dbede7edd608b"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/agpl-3.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/agpl-3.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f5a04c6b1adb2b8906e58778b748afc01e32819065db4622736cb8980e609b2d"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/agpl-3.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/agpl-3.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f3c3c46ae210d55a0cb042408bb072c8bcfccdf854965e69683438489f5a2146"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/agpl-3.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/agpl-3.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "c4d9789ad45db2e0ba47a30fde86adf321cbc2269bed29a9e7079d2a2eed7b99"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/agpl-3.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/agpl-3.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "c3fde506a9b837b6528e69b29ca5eb4b9e1b1db9aa9449c92efcfcb0bcd0dd35"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "684e9b8ec6d69ad913354f5fd6282d2273fbde80f20c547fd012ea6671b01633"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "926cc5e12691d69d86b80d03071981f1571c0412c89f982d4dcc6faf81c3bdd2"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0-noappendix.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b9d74ce5950bd18522b2fd591222591f4464df2fa1c60d55fe6d03bf429df571"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "ef8238364381b930333b2fcc5fc6dfbff74e13863fad7e70c5c4fe9743d8d5ed"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.filled-appendix.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.filled-appendix.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "7251287452976ceb8026fdc3ebc2dbf1a405b51313c176b9b98c0fc461779a8d"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.restrictive-paragraph.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.restrictive-paragraph.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "90992cfc3ce144f83b83113e36bb931ae4502fc56198ee0ebd217b1675f26397"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "77459cd32521918fa9f5ba013593e242a486afb4d9661b7b63e9b85172de5562"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "236a4a64cb0034ef2d8107c5a30bac8d34fabd69881b221546d8f97348908dc8"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/apache-2.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/apache-2.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-2-clause.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-2-clause.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "94039dd584981dd569026ae2855ac5ad8627f0c6695bbcf102c64ea9913f7d56"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-2-clause.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-2-clause.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "105d5e6fa517e41df012b402eaaa214b85544ab8968122d93ff2d62e4d821c03"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-2-clause.third-clause.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-2-clause.third-clause.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "cf6359d3fca204efb7266b2a86fbee5f7511ecbea0ca84ce36cad64c12fcaef1"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-2-clause.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-2-clause.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "296adc98e6271f283adeb351976acd6a011de9390e61e1269804db0f1001c130"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-2-clause.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-2-clause.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f32fb3b417a194167cfad068223fc975ba96c5960513a10f66a3c28720aec1df"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.advertising-clause.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.advertising-clause.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "ac7dceb3331c808cec04a1a9ab0cc68e611fa27ba9b27a7b7d7e35aa0f65c282"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "834bb3cb146200697964cc75945c65095bf6a678c6f43fc9dce42102e4929e66"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.filled-copyright.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.filled-copyright.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b2e1c68d550253aca0d514d4b0cdbfa6b49e9f98017548545646a9e9e6fdac80"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "644c0fa317bb1789c05bed8011377d7ca980b16f5737a419e19e6da187f82e8b"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "7559fef5685f4d3a44d386d45fe59e747b0b83dcdbda37a7e8bf8dbf670fdaae"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/bsd-3-clause.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/bsd-3-clause.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5a93d5831e1297ab10fe643e1a631e83be392896da14ee2951285a79012df69d"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/cc0-1.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/cc0-1.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "8deadc2eee5a2c4d0f1be90fd151d454f214b990c114c9ee3cf3e040ff841d4d"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/cc0-1.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/cc0-1.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "bdf7792ee6a31eb3da6835ec57cb1f576305115e70a9d2527d95c89b38cef8cd"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/cc0-1.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/cc0-1.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "af4429b8f41ba6cd55a17341eb37c52c11385ec37d3acefa8ae3a636ba003ec2"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/cc0-1.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/cc0-1.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/dual.mit-and-apache.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/dual.mit-and-apache.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "873f7cf4f5b4082032856a3f1cf476c24585a3317980e400907ddea7f54e6157"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/dual.mit-and-mit-0.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/dual.mit-and-mit-0.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "61a03063fc963d782c8f1a0bcd12e40ad2ef78b68c27d9008b8984d88b6ce35a"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/dual.mit-or-bsd-3.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/dual.mit-or-bsd-3.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "2c507d1148ebdecfc32d6a173eed7cb0374fb782c1df16e5f44b2889efc5bb9c"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/empty.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/empty.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-2.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-2.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "38dd6e1217981cc4d6c212bfcea39daaf2c7b62a2871958a0ace42a5bf487f89"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-2.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-2.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "ab1f0487e4a16c7fa805c74e526ae01356e6d6eb50e8cf11646fd610ed5019c7"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-2.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-2.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "fc1dda62a8e2ddfdbb5caf1d5fe9720c51bf4671f7771db30d17dce6016c9c45"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-2.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-2.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-3.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-3.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "3614b26be110b4911c75d15a4f042bece6f335bf30c8c369ea200df6ee75e61b"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-3.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-3.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "06bc80434393c568b02f7daed717aacf3bb003c2baf8a42870d129ce5994a06f"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-3.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-3.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "74920d4dccbd11b7ea5d26580a3ad5a890cf51626231c6e47ffb1fd2569a73fc"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/gpl-3.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/gpl-3.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "fb981668c18a279e285fc4d83fba1e836cc84dd4daa73c9697d3cfd2d8aca6e0"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/isc.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/isc.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "d2b6b605e1aaefb46475238b68b25d4cac9062818865d2ac4a305772b6127575"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/isc.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/isc.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5408f1958dcc1d5d4a5331d46d0aee7898cf5bb931ae36fbaee3176ba11701f4"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/isc.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/isc.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "4d6332999396a741fcb71947111c068f0c71ef6aa6f374e2949fa0ea6844346f"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/isc.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/isc.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f2ec607f67bb0dd3053b49835b02110d5cd0f8eb6da3aac4dc0b142a6b299be9"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-2.1.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-2.1.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "916ff1a91a469d0bb0216f4cb06f07b93c86a2fa6daf966ee8c7c240a27cec54"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-2.1.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-2.1.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "562c3b5bff09082b2381db9b208a73ed45d5c5a2e5ef229df24f2182e4e5824e"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-2.1.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-2.1.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f932d2fd23e182aa1244f4fa2e0ab5d9f2ee529f87ed3af0ee32f4ccbc47d930"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-2.1.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-2.1.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-3.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-3.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "c3b98d3bed7d3d66a15204f4b924a8c86bcbb50b82177bb30e16d8d49cfce86e"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-3.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-3.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "555e6071a135ef3bbcb6ee60626b51571c6af649294651803c04704cd12227dd"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-3.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-3.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "2ef4954883fad653e7cc47c90c719666082fa81612a8a60eb056bf336629a5e1"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/lgpl-3.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/lgpl-3.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "996af0513df21f7496288951c41428a03c174e9e4a9d63665c57d670f845ccb1"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/manifest.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/manifest.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "49ed22a0742bc179487307bdb649aedef24a368dd1302a3713bed3181234bac5"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit-0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit-0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "6ea7c3697bd791ace3d218524248e4b0582760f3d95af163545dcd67da89d4e2"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit-0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit-0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "4f7e1c9fbd35e09b6287b9ab09ba58fca50a9305a7a69fe683153b002d1a0725"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit-0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit-0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "3db74cc3260ffd9242102bff6be6c45ba72c7e6a2c08311c9d60d16b18f85dfa"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit-0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit-0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "59746d6285ffa44bfc7ecada352aa5d6a20dc8eab418a60ce091cc739012c135"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "cb766b9bd7fe2bf00ccc4a7237079dc04882dca5a98605321c8f0a895395f0b5"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.crlf.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.crlf.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.deleted-sentence.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.deleted-sentence.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "88abc5918dc076f179cb846b967af63203d6649482f733b6d0de5a37111db4c1"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.deleted-warranty.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.deleted-warranty.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "a644a64f8c32d2ca447b8072356555f81e9c5f0e75fc62c2eb95b0d31c6db8fa"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.filled-copyright.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.filled-copyright.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "ce60759ef96a6d6b329e99dfb1adbe662bceacdc7d7b6c36f82e05088edaef3c"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.negated-grant.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.negated-grant.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "93247c1764dbef49749ebb1f6040ab4e99fc703756d923bbdc0477eccc26ce11"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.noncommercial-sentence.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.noncommercial-sentence.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "651279c8d9326f3b2a438905a9e81e5ab611c655c61e48354a447da2396c5126"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.noncommercial.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.noncommercial.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "02e605e58eb38cab9da98744ceb9eb84737cf5e6ea4a7934b8a21c6900d27791"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.restrictive-copyright-line.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.restrictive-copyright-line.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f1755e3e933bb97e1f4cd511059508f21cace214f67dcd2592b44eb9c9f38c6b"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.restrictive-first-line.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.restrictive-first-line.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "780e96df89e19ba01cc7400c6bf99950cc7621012ad0a8e97a7f1225ff41326f"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.restrictive-title-personal-use.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.restrictive-title-personal-use.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "dee9ae7f25b2fdd5475b19293c740a8a5dd6a0e2f56c55ea81dd0206c8dbeb65"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.restrictive-title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.restrictive-title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "05b93500d41a71ae6688dd92140362dbf1fc71a03fa282775780b7bd049ca8bd"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e9611126ac25dea9cd94c738334ff1b6f67c9b9d8ab79b67b12cff4a520ea5d5"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.short-no-ai.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.short-no-ai.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "90a56aa99a972294c174fa4d2e1466a17f8077ddb0e61a749000f6151c33d27e"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.short-not-commercial.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.short-not-commercial.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "92cc191ad4bbf5f9f83303cea2938005f8aad3ada10f8ae34b44080b828a98ad"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.title-and-copyright.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.title-and-copyright.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e4e91c10ad47788754ed7b9fdbf7dc5b5cf931abdcd50860fcdae84c2d941868"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "004b2238f8ccb05f51cb76ffd813c7d36495b755f31126c2f7b783bfe761520f"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mit.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mit.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mpl-2.0.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mpl-2.0.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "fe6cbe6fc55bd84b8378a38af803f5b59cbf90a57cd1dea5f1f1a8bbaadfd17d"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mpl-2.0.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mpl-2.0.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "d0ec08cc848acd271df585274145ac3b543520e36ef5e3e10d6f1fde9b93defa"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mpl-2.0.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mpl-2.0.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "680c9cdab5f5e873c9665cd0ba4a2596fe7ce5d24a7c2dc46eb2355bf7a48b10"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/mpl-2.0.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/mpl-2.0.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/proprietary.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/proprietary.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "eb4ca4b44c9d32fe682897a407ecac9008567425a25b1a6f15b5c9df508c7ab7"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/readme.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/readme.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "fe83f4b35927373ff8a0a9aca473b8cb7f3c31692e15e81a3fbcd48b3bd30a9e"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/unlicense.copyright-header.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/unlicense.copyright-header.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "e7b9fd69d3cebd2f5ba1f06a157e65caee66f773ab36e6e784e0eeb34d055ccd"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/unlicense.rewrapped.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/unlicense.rewrapped.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "b6b20b2e568c570f5fd0cc1c91df1ba9b7c71d141aee099d5f94454ac75168d9"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/unlicense.title.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/unlicense.title.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "27a1cf2ad5044892650b74a2092826d19bd5ec8510dc1e6d43b4c9c3788b6a90"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/unlicense.verbatim.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/unlicense.verbatim.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "0bdebfeda07d45dada625ae1317c6f833186e798b171d0db640bcf32e92a8240"
+
+[[file]]
+path = "crates/grim-mirror/tests/licenses/whitespace.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "crates/grim-mirror/tests/licenses/whitespace.txt"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "62ffe33c62ba985f1d32ecc50c5ed46e9977890c85da4d38999396d5c2a0caa1"
+
+[[file]]
+path = "crates/grim-mirror/tests/fixtures/git_cmd.rs.snapshot"
+source_repo = "grimoire-rs/grimoire"
+source_path = "src/catalog/git_cmd.rs"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "18ae5aca58ed64f1988a210e174790fb756196868fc43a863e430ae09774a399"
+
+[[file]]
+path = "test/src/__init__.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/__init__.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "a68bcf86cbe0dbd8fd41665a554cd185156c9c3427176a99f5c412ed02456a51"
+
+[[file]]
+path = "test/src/assertions.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/assertions.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "bd0906749d4b90589c9cc5772cb8a025bec131e13e8c40856c6960c1a8cb44f7"
+
+[[file]]
+path = "test/src/registry.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/registry.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6dccf5b7eac0c7576e0cf7e9e374328816d05642d322800753804fb6fb3b24fa"
+
+[[file]]
+path = "test/src/runner.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/runner.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "93a6adc3a97a4d3a6caa01fa004a34927060bf59149960741574faaacd6ec27f"
+
+[[file]]
+path = "test/src/zot.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/zot.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "5e69412edd7315fe3633df79e41202b5a3baa7e0fcf6867a433d54f67deec515"
+
+[[file]]
+path = "test/src/helpers.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/helpers.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "fe02e158778c218d8c833aa448535d95270b85fd7abe74e29014415e49d74bb6"
+
+[[file]]
+path = "test/tools/accept_floor.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/accept_floor.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "4f0477d57dae3c50dfc9fa03de14d41f3b8ece4b9703d15c59c19e6b066b1fe0"
+
+[[file]]
+path = "test/tools/accept_shard.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/accept_shard.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "74342d6dd148f37201baa513c6de8a2fee90c97219925c550fb2c90717af1c75"
+
+[[file]]
+path = "test/tools/require_all_passed.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/require_all_passed.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "78e3256650bdf904f9c3d0503f1defd5a37cebec07534908be9b9480541647de"
+
+[[file]]
+path = "test/tests/test_accept_floor.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_accept_floor.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8ff9204924ae011d586118f052a813a4d6d7d461335977efb67b3fa5a3e7f1f9"
+
+[[file]]
+path = "test/tests/test_accept_shard.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_accept_shard.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6170fc46a31ac29d54a719b4babf631e53f3bf8199abfb638891c3827a6ea3e2"
+
+[[file]]
+path = "test/tests/test_text_io_hygiene.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_text_io_hygiene.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "f8d352a4c6919bfb3b583e84a20ae895a91f36974e92c8d1e41c457e3108fbb9"
+
+[[file]]
+path = "test/tests/conftest.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/conftest.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "e775e93bfa3fa31b7b73e68928ad41e33dfde9c311de379f083136e9a03651bf"
+
+[[file]]
+path = "test/pyproject.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/pyproject.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6a2aa9def19840d336115d029d245bc74693efbe29687abcf20731f0287e56fb"
+
+[[file]]
+path = "test/src/git_fixture.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/src/git_fixture.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "512a7f7054908b0c1c72296df07be561cbb6bddafd06c91bd32a1bab7dbf8ca5"
+
+[[file]]
+path = "test/conftest.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/conftest.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "a5e553877c2833ec27573ed7960928103282aa1baf1e750634066134a016ffde"
+
+[[file]]
+path = "test/.gitignore"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/.gitignore"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "176b04ae736c2f10e2d4fc7b6bb268aa286c676e25dd7dd80ac6c7a4c0ef8513"
+
+[[file]]
+path = "test/taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/taskfile.yml"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "rewritten"
+sha256 = "58d53e04ef2b10199d17fdc6176bb81c601ce8b27e65db85cf22a2217f80bfb4"
+
+[[file]]
+path = "test/tests/test_mirror_bundles.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_bundles.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "f60eb6d05b0f0bd30cfd3231d1b34e75c3d613664b6f08ae05faf4ba05505ada"
+
+[[file]]
+path = "test/tests/test_mirror_cli.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_cli.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "7108f6b60c95771faf613b1d4ddcdb5918b90a09d6d81611f0c8a9188895a488"
+
+[[file]]
+path = "test/tests/test_mirror_dialect.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_dialect.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5448fee9d24ee10cf95d1317e79ba06f1dbbeb44083f11abea56d504f760fbd8"
+
+[[file]]
+path = "test/tests/test_mirror_kinds.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_kinds.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "4e61ce3b4f0c68b979635be422d2e55d1994ab291c9632897e061cb9c4fdf653"
+
+[[file]]
+path = "test/tests/test_mirror_license.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_license.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "65bf24cb5386bdeba4992219610f19b96c254f44b6c714b6b97e1896eb77fe44"
+
+[[file]]
+path = "test/tests/test_mirror_marketplace.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_marketplace.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "5fe69de87b9fee4c6ce770554bd29108889421f180c4f8ed75996ba8dd6e7f0d"
+
+[[file]]
+path = "test/tests/test_mirror_monorepo.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_monorepo.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "0498cf2fb960eb5d6aa10521de4bb8c5f2d0320b8c65c12b98bea3c2ffdaad72"
+
+[[file]]
+path = "test/tests/test_mirror_retire.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_retire.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "37d06e11484d6f4053ca8690fee80fff13ffccdfcfd8fd2ccbc11a40226da5c6"
+
+[[file]]
+path = "test/tests/test_mirror_staging.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_staging.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "1cbde4f3640acfc480bdad22a296506b73fcaea406d58a30c0ca50d00fc29d3f"
+
+[[file]]
+path = "test/tests/test_mirror_versions.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_mirror_versions.py"
+source_commit = "eaa7da0b2683d68a7bb61489e91238d47a7ef325"
+mode = "copied"
+sha256 = "ea1c0fca74c866ab72bbd10f18aee585e3616e483fac541c4ce7a44715904b87"
+
+[[file]]
+path = ".claude/rules/docs-style.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/docs-style.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "7fb7aea9f37a7deb6b3d875beaf484658ffc45c578aa61a5e361e8b13e9b775e"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#1"
+disposition = "taken"
+targets = ["grimoire.toml", "grimoire.lock"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#2"
+disposition = "taken"
+targets = [".claude/skills/hex-architect", ".claude/skills/hex-core", ".claude/skills/hex-discuss", ".claude/skills/hex-execute", ".claude/skills/hex-finalize", ".claude/skills/hex-init", ".claude/skills/hex-loop", ".claude/skills/hex-plan", ".claude/skills/hex-retro", ".claude/skills/hex-review"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#3"
+disposition = "taken"
+targets = [".claude/rules/hex-state.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#4"
+disposition = "taken"
+targets = [".claude/skills/nox-review"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#1"
+disposition = "taken"
+targets = ["CLAUDE.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#2"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#3"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "describes grim-mirror, its Unstable source-only status and the grim-sdk boundary"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#4"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "one-sentence pointer kept; wording drops target users and names M's own product-context.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#5"
+disposition = "taken"
+targets = ["AGENTS.md", ".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#6"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "task list adds ci:lint and test:parallel, drops catalog and upstream tasks M lacks"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#7"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "one-member workspace crates/grim-mirror plus grim-sdk dependency; one row per M code area"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#8"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "M's own variables: GRIM_BIN, GRIM_OFFLINE and two test-harness variables"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#9"
+disposition = "not-applicable"
+reason = "grim-specific: M has no catalog/ of publishable first-party packages"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#10"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "eight principles; principle 3 gains one sentence on untrusted upstream git content"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#11"
+disposition = "not-applicable"
+reason = "grim-specific: the 1.0.0 compatibility freeze; M is Unstable and source-only, so the count sentence says eight"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#12"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#13"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "worktree sibling convention renamed to grim-mirror-wt-<topic>; founding records noted; archive and submodule text dropped"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#14"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "skill list drops docs, changelog, prepare-release and the upstream refresh skill; adds the installed bundles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#15"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#16"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#17"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#1"
+disposition = "taken"
+targets = [".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#2"
+disposition = "taken"
+targets = [".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#3"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "rows name M's rules (mirror, run report, exit codes); grim-only concerns dropped"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#4"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "Rust, Python, Bash only; no TypeScript rules in M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#5"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "six rows: mirror, cli, cli-api, tests, ci, taskfiles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#6"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "mirrors the paths: frontmatter of M's rules; crates/** replaces src/**"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#7"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "global count stays four; the list names M's four"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#8"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "declared groups cover M's globs only"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#9"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "section renamed Installed rules; lists the bundles M installs; the two local edits no longer exist (PD-21)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#10"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "drops docs, changelog, prepare-release and upstream-refresh rows; docs row points at installed skills"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#1"
+disposition = "taken"
+targets = [".claude/rules/quality-core.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#2"
+disposition = "rewritten"
+targets = [".claude/rules/product-tech-strategy.md"]
+reason = "Rust, Python acceptance, no hook launcher deviation"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#3"
+disposition = "taken"
+targets = [".claude/rules/workflow-intent.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#4"
+disposition = "taken"
+targets = [".claude/rules/hex-state.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#5"
+disposition = "taken"
+targets = [".claude/rules/quality-rust.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#6"
+disposition = "taken"
+targets = [".claude/rules/quality-rust-errors.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#7"
+disposition = "taken"
+targets = [".claude/rules/quality-rust-exit_codes.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#8"
+disposition = "taken"
+targets = [".claude/rules/quality-python.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#9"
+disposition = "taken"
+targets = [".claude/rules/quality-bash.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#10"
+disposition = "rewritten"
+targets = [".claude/rules/quality-security.md"]
+reason = "generic top kept; grimoire attack surfaces replaced by grim-mirror ones (git input, registry credential, spawned grim)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#11"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-bugfix.md"]
+reason = "path globs follow M's layout (crates/**, test/**)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#12"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-refactor.md"]
+reason = "path globs follow M's layout; Review-Fix Loop block stays byte-equal to workflow-bugfix.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#13"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-feature.md"]
+reason = "globs and gate names follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#14"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-git.md"]
+reason = "submodule section dropped; glob targets cog.toml"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#15"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-github.md"]
+reason = "org, labels and issue types follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#16"
+disposition = "rewritten"
+targets = [".claude/rules/meta-ai-config.md"]
+reason = "names and cross-repo ADR references edited; 4 global rules and 280-line budget unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#1"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-mirror.md"]
+reason = "invariants 1, 4 and 6 rewritten for grim-sdk and the git_cmd.rs snapshot; docs path is docs/mirroring.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#2"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-cli.md"]
+reason = "rewritten for M's clap shell and exit codes"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#3"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-cli-api.md"]
+reason = "rewritten for M's run report (schema, items[])"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#4"
+disposition = "not-applicable"
+reason = "grim-specific: index of grim's 27 subcommands"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#5"
+disposition = "not-applicable"
+reason = "grim-specific: the $GRIM_HOME content store and index layout"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#6"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-ci.md"]
+reason = "names M's workflows (verify-basic, verify-deep, acceptance, claude)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#7"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-taskfiles.md"]
+reason = "generic conventions kept; file layout and verify phases are M's"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#8"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "pytest against a local registry, grim-mirror and grim; suite floor files"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#9"
+disposition = "not-applicable"
+reason = "grim-specific: ArtifactKind matrix and consumer repos (the mirror consumes kinds through grim, never defines them)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#10"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#11"
+disposition = "not-applicable"
+reason = "grim-specific: grim config key titles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#12"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#13"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#14"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#15"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#16"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#17"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#18"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#19"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which M does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#1"
+disposition = "rewritten"
+targets = [".claude/rules/arch-principles.md"]
+reason = "M's crate layout, run flow and ADR index (adr_artifact_mirroring)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#2"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md"]
+reason = "attackers on upstream git content and the registry; insiders and upstream authorship are non-goals"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#3"
+disposition = "rewritten"
+targets = [".claude/rules/product-context.md"]
+reason = "grim-mirror identity; Related Repositories lists grimoire, grim-gui, arcana, lore"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#4"
+disposition = "rewritten"
+targets = [".claude/rules/docs-style.md"]
+reason = "M has no docs site; the rule is re-scoped to docs/mirroring.md, the one page, in the Grimoire voice"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#5"
+disposition = "not-applicable"
+reason = "grim-specific: vendor renderer declines and upstream harness ledger"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#6"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#1"
+disposition = "taken"
+targets = [".claude/hooks/hook_utils.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#2"
+disposition = "taken"
+targets = [".claude/hooks/pre_commit_verification.py", "taskfile.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#3"
+disposition = "rewritten"
+targets = [".claude/hooks/conventional_commit_validator.py"]
+reason = "comment on the release type reworded; type list unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#4"
+disposition = "rewritten"
+targets = [".claude/hooks/pre_tool_use_validator.py"]
+reason = "generated-file table emptied: M has no cargo-dist release.yml"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#5"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "CONTEXT_REMINDERS and CONFIG_REMINDERS rewritten for crates/grim-mirror/**, test/**, docs/mirroring.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#6"
+disposition = "taken"
+targets = [".claude/hooks/user_prompt_router.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#7"
+disposition = "taken"
+targets = [".claude/hooks/session_start_loader.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#8"
+disposition = "taken"
+targets = [".claude/hooks/stop_validator.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#9"
+disposition = "taken"
+targets = [".claude/hooks/subagent_stop_logger.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#10"
+disposition = "taken"
+targets = [".claude/hooks/pre_push_main_blocker.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#1"
+disposition = "rewritten"
+targets = [".claude/settings.json"]
+reason = "same hook wiring and timeouts; no enabledPlugins, no claudeMdExcludes (bundles render references as skills, not rule support dirs)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#2"
+disposition = "taken"
+targets = [".gitignore"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#3"
+disposition = "not-applicable"
+reason = "M declares no MCP server; GitHub work goes through the gh CLI"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#4"
+disposition = "not-applicable"
+reason = "per-developer Serena project config, gitignored in grimoire and not committed"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#5"
+disposition = "taken"
+targets = [".taskrc.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#6"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "grimoire's agent-state ignores (state, hook state and locks, settings.local.json, CLAUDE.local.md, scheduled_tasks.lock, .file-tracker.log, .serena/, worktrees, .tmp, *.lock, .task) merged with M's build ignores"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#7"
+disposition = "taken"
+targets = [".github/CODEOWNERS"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#8"
+disposition = "rewritten"
+targets = [".gitattributes", ".licenserc.toml"]
+reason = "no agent entries in either; M keeps the mirror CRLF fixture line and includes crates/**/*.rs"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#1"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "vendored sets follow M's installed bundles (reference skills added, typescript rules dropped)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#2"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#3"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#4"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#5"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "worktree convention string is grim-mirror-wt-"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#6"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#7"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#8"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#9"
+disposition = "not-applicable"
+reason = "no release flow in M, so no workflow-release.md (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#10"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#11"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#12"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#13"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "skill-invocation table drops docs, changelog, prepare-release, upstream-refresh; adds the reference skills"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#14"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#15"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#16"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#17"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#18"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#19"
+disposition = "rewritten"
+targets = [".claude/tests/test_hooks.py"]
+reason = "reminder rows and path fixtures follow M's hooks"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#20"
+disposition = "not-applicable"
+reason = "no harness ledger or upstream-refresh skill in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#21"
+disposition = "not-applicable"
+reason = "no OCX signing or release workflow in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#22"
+disposition = "rewritten"
+targets = [".claude/tests/pyproject.toml"]
+reason = "python floor 3.11"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#1"
+disposition = "taken"
+targets = [".claude/templates/artifacts"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#2"
+disposition = "taken"
+targets = [".claude/templates/claude_mechanisms"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#3"
+disposition = "rewritten"
+targets = [".claude/scripts/README.md", ".claude/scripts/statusline.sh", ".claude/scripts/statusline-install.sh"]
+reason = "statusline.sh unchanged; README and installer text name grim-mirror"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#4"
+disposition = "taken"
+targets = [".claude/scripts/sync-canonical-blocks.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#5"
+disposition = "rewritten"
+targets = [".claude/taskfile.yml"]
+reason = "tests task runs test_ai_config, test_hooks, test_scaffold_manifest and the manifest check; link check skips bundle-marked paths (PD-21)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#6"
+disposition = "taken"
+targets = [".gitignore"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#7"
+disposition = "rewritten"
+targets = [".claude/skills/rust-quality-reference", ".claude/skills/python-quality-reference", ".claude/skills/docs-quality-reference"]
+reason = "bundles render support material as *-reference skills, so no rules/<x>/ dirs to exclude"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#1"
+disposition = "rewritten"
+targets = [".claude/skills/commit"]
+reason = "posture and gate names follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#2"
+disposition = "rewritten"
+targets = [".claude/skills/finalize"]
+reason = "names M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#3"
+disposition = "rewritten"
+targets = [".claude/skills/next"]
+reason = "names M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#4"
+disposition = "rewritten"
+targets = [".claude/skills/bugfix"]
+reason = "gate and paths follow M (crates/, test/)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#5"
+disposition = "rewritten"
+targets = [".claude/skills/rca"]
+reason = "paths and repo name follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#6"
+disposition = "taken"
+targets = [".claude/skills/fix"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#7"
+disposition = "rewritten"
+targets = [".claude/skills/builder"]
+reason = "paths follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#8"
+disposition = "rewritten"
+targets = [".claude/skills/qa-engineer"]
+reason = "suites and tasks follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#9"
+disposition = "rewritten"
+targets = [".claude/skills/code-check"]
+reason = "names M's rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#10"
+disposition = "rewritten"
+targets = [".claude/skills/security-auditor"]
+reason = "threat model and paths follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#11"
+disposition = "not-applicable"
+reason = "the installed docs-essentials skills (docs-plan, docs-review, docs-instrument) replace grimoire's site-specific docs skill"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#12"
+disposition = "not-applicable"
+reason = "no release flow or site changelog in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#13"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#14"
+disposition = "rewritten"
+targets = [".claude/skills/outside-pr-review"]
+reason = "scan paths follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#15"
+disposition = "not-applicable"
+reason = "no harness capability ledger in M (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#16"
+disposition = "taken"
+targets = [".claude/skills/meta-maintain-config"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#17"
+disposition = "rewritten"
+targets = [".claude/skills/meta-validate-context"]
+reason = "example paths follow M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#1"
+disposition = "rewritten"
+targets = [".agents/adr", ".agents/plans", ".agents/specs", ".agents/research", ".agents/retro", ".agents/memory"]
+reason = "discussions, goals and worktrees directories are created by hex skills on first use; worktrees stays gitignored"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "planning flow kept; founding records named"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#3"
+disposition = "taken"
+targets = [".claude/rules/meta-ai-config.md", ".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#4"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "105 lines: Pointers, Preferences, empty Memory"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#5"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "names task verify, ci:lint, docs:check, M's security-sensitive crate files and the grim-sdk boundary"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#6"
+disposition = "taken"
+targets = [".agents/memory/hex.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#7"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "perspectives.always rows target git.rs, license.rs, publish.rs and workflows"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#8"
+disposition = "not-applicable"
+reason = "a new repository starts with an empty Memory; the entries are grimoire's plan history"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#9"
+disposition = "taken"
+targets = [".agents/retro/inbox"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#10"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "directories absent until a hex skill creates them; hex.md Pointers names the discussions home that hex-state.md checks"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#11"
+disposition = "not-applicable"
+reason = "grim-specific: harness capability ledger"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#12"
+disposition = "not-applicable"
+reason = "M renders bundles to .claude/skills only (clients = claude); no .agents/skills copies"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#13"
+disposition = "rewritten"
+targets = [".agents/adr/adr_artifact_mirroring.md", ".claude/rules/arch-principles.md"]
+reason = "ADR index row required per ADR kept; one ADR, copied from the grimoire repository"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#14"
+disposition = "not-applicable"
+reason = "grim-specific: handover, review and security-audit records of grimoire"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#1"
+disposition = "not-applicable"
+reason = "none present in M either; grimoire.toml clients is claude only"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "written for M; Claude reaches it through CLAUDE.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#3"
+disposition = "not-applicable"
+reason = "see 10#12: no .agents/skills in M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#4"
+disposition = "taken"
+targets = ["grimoire.toml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#5"
+disposition = "rewritten"
+targets = ["ocx.toml", "ocx.lock"]
+reason = "M pins its own tool set (zot, uv, ruff, shellcheck, shfmt, hawkeye, cargo-deny, lychee, actionlint)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#6"
+disposition = "taken"
+targets = [".claude/skills/nox-review", ".agents/memory/hex.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#1"
+disposition = "taken"
+targets = [".claude/hooks/pre_commit_verification.py", "taskfile.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#2"
+disposition = "rewritten"
+targets = [".github/ISSUE_TEMPLATE", ".claude/rules/workflow-github.md"]
+reason = "forms and discussions URL point at M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#3"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md"]
+reason = "CODE_OF_CONDUCT.md unchanged; the other two rewritten for M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#4"
+disposition = "taken"
+targets = ["taskfile.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#5"
+disposition = "rewritten"
+targets = [".config/nextest.toml"]
+reason = "grimoire-specific test-count comment dropped"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#6"
+disposition = "rewritten"
+targets = ["docs/mirroring.md"]
+reason = "the docs/ part applies to the single page docs/mirroring.md (with its reminder row); catalog/ does not apply, M has none"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#7"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#8"
+disposition = "not-applicable"
+reason = "grim-specific: external/rust-oci-client submodule"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#1"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-mirror.md"]
+reason = "moved with the crate and rewritten for the split"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "architecture table row for crates/grim-mirror/**"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#3"
+disposition = "taken"
+targets = [".agents/adr/adr_artifact_mirroring.md", ".agents/specs/design_artifact_mirroring.md", ".agents/plans/plan_artifact_mirroring.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#4"
+disposition = "taken"
+targets = ["test/tests"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#5"
+disposition = "taken"
+targets = [".claude/rules/meta-ai-config.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#6"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "rows for crates/grim-mirror/** added; closes the gap the inventory names"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#7"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "reminder rows for the root and crate Cargo.toml added"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#8"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "docs/mirroring.md reminder row added"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#9"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md", ".claude/rules/quality-rust.md"]
+reason = "threat model rewritten for M; quality rules cover **/*.rs unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#10"
+disposition = "rewritten"
+targets = [".claude/rules/product-context.md"]
+reason = "Related Repositories lists grimoire, grim-gui, arcana, lore"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#11"
+disposition = "rewritten"
+targets = ["AGENTS.md", "CLAUDE.md"]
+reason = "M is its own repository now and carries both files"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#1"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "full AGENTS.md as in grimoire, not vscode's 12-line list"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#2"
+disposition = "taken"
+targets = ["CLAUDE.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#3"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "catalog present, as in the indexer"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#4"
+disposition = "rewritten"
+targets = [".claude/rules"]
+reason = "first-party and installed rules of M"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#5"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-mirror.md", ".claude/rules/subsystem-cli.md", ".claude/rules/subsystem-cli-api.md"]
+reason = "subsystem family kept, three rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#6"
+disposition = "rewritten"
+targets = [".claude/hooks"]
+reason = "full hook set, unlike the siblings' empty directory"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#7"
+disposition = "rewritten"
+targets = [".claude/settings.json"]
+reason = "hook wiring as in grimoire"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#8"
+disposition = "rewritten"
+targets = [".claude/tests"]
+reason = "structural tests kept, unlike the siblings"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#9"
+disposition = "rewritten"
+targets = [".claude/skills"]
+reason = "grimoire's first-party skills plus bundle skills, not vscode's swarm layout"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#10"
+disposition = "not-applicable"
+reason = "M authors no project-local subagents (meta-ai-config.md)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#11"
+disposition = "rewritten"
+targets = ["grimoire.toml"]
+reason = "installs hex, nox and the rust, python and docs bundles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#12"
+disposition = "rewritten"
+targets = [".agents"]
+reason = "tracked planning tree with founding records"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#13"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "see 6#6"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#14"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "taskfile.yml with subsystem taskfiles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#15"
+disposition = "not-applicable"
+reason = "artifact-kinds.md and grim-compat-markers.md are copied into grim-gui only (plan C-032 source rows); M consumes kinds through grim"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.1"
+disposition = "taken"
+targets = ["crates/grim-mirror/src", "taskfiles/rust.taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.2"
+disposition = "rewritten"
+targets = [".config/nextest.toml"]
+reason = "ci profile and JUnit path kept; the zero-retry override for grimoire probe and index-sync tests dropped, no such tests here"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.3"
+disposition = "rewritten"
+targets = ["crates/grim-mirror/tests/boundary.rs"]
+reason = "guards the SDK-only boundary: no grimoire or hook crate in the tree, publish = false, dist = false; no dist-workspace.toml check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.4"
+disposition = "taken"
+targets = ["crates/grim-mirror/tests/licenses", ".gitattributes"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.5"
+disposition = "rewritten"
+targets = ["test/tests", "test/conftest.py", "test/src"]
+reason = "same black-box concept, reduced to the ten mirror suites plus the harness meta tests"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.6"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py", ".claude/tests/test_hooks.py", ".claude/taskfile.yml"]
+reason = "adapted to M's rule set and layout; also runs test_scaffold_manifest.py and the manifest check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.7"
+disposition = "rewritten"
+targets = ["taskfiles/ci.taskfile.yml"]
+reason = "test_workflows.py dropped (PD-20: no release or OCX signing workflow); actionlint through ci:lint in task verify is the workflow gate instead"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.8"
+disposition = "rewritten"
+targets = ["taskfiles/docs.taskfile.yml"]
+reason = "docs:check runs the vendored docs-quality checks over README.md and docs/; no site build, URL, theme or npm checks (no docs site)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.9"
+disposition = "not-applicable"
+reason = "grim-specific: reads grimoire's docs pages and CLI; the docs-examples idea is covered by docs:check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.10"
+disposition = "not-applicable"
+reason = "grim-specific: terminal cast recordings feed grimoire's docs site"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.11"
+disposition = "not-applicable"
+reason = "grim-specific: 20,000-entry index sync benchmarks"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.12"
+disposition = "not-applicable"
+reason = "no size-budgeted binary in M (grim-hook launcher is grim-specific)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.13"
+disposition = "not-applicable"
+reason = "grim-specific: Principle 9 compatibility fixtures and old-grim runs; grim-mirror has no releases"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.14"
+disposition = "not-applicable"
+reason = "grim-specific: cross-repository index e2e contract with the indexer"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.15"
+disposition = "not-applicable"
+reason = "no scripts/ directory in M; tools/scaffold_manifest.py is tested by .claude/tests/test_scaffold_manifest.py under claude:tests"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.1"
+disposition = "rewritten"
+targets = ["test/pyproject.toml"]
+reason = "project grim-mirror-tests; xdist, tmp retention and testpaths kept; index_e2e and bench markers and the pexpect, rich, opentelemetry-proto dependencies dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.2"
+disposition = "rewritten"
+targets = ["test/uv.lock"]
+reason = "regenerated for this repository's dependency set"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.3"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.4"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.5"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.6"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.7"
+disposition = "not-applicable"
+reason = "grim-specific: skips --global runs under host managed Claude settings; the mirror suites never pass --global, guard removed from test/conftest.py"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.8"
+disposition = "rewritten"
+targets = ["test/tests/conftest.py"]
+reason = "trimmed to project_dir and grim_at, the two fixtures the mirror suites use; drops the index and OTLP fixture imports"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.9"
+disposition = "taken"
+targets = ["test/src/__init__.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.10"
+disposition = "taken"
+targets = ["test/src/assertions.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.11"
+disposition = "not-applicable"
+reason = "grim-specific: hook and settings consent driver"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.12"
+disposition = "taken"
+targets = ["test/src/git_fixture.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.13"
+disposition = "rewritten"
+targets = ["test/src/helpers.py"]
+reason = "slimmed to tar_of, write_config and make_artifact, the only parts the mirror suites import"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.14"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.15"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.16"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.17"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.18"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.19"
+disposition = "taken"
+targets = ["test/src/registry.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.20"
+disposition = "taken"
+targets = ["test/src/runner.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.21"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.22"
+disposition = "not-applicable"
+reason = "grim-specific support module no mirror suite imports (hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.23"
+disposition = "taken"
+targets = ["test/src/zot.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.24"
+disposition = "not-applicable"
+reason = "grim-specific: test/data holds fixtures none of the mirror suites read"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.25"
+disposition = "rewritten"
+targets = ["test/taskfile.yml", "test/.gitignore", ".gitignore", ".github/workflows/acceptance.yml"]
+reason = "test/bin is gitignored as in grimoire; task test:build stages grim by copy from GRIM_SOURCE_BINARY (PD-12) instead of building it"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.26"
+disposition = "rewritten"
+targets = ["test/SUITE_FLOOR", "test/SKIP_CEILING", "test/XFAIL_CEILING", "test/tools/accept_floor.py", "test/taskfile.yml"]
+reason = "mechanism and tools unchanged; the three numbers are M's own (112, 0, 0)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.27"
+disposition = "taken"
+targets = ["test/tools/accept_floor.py", "test/tools/accept_shard.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.28"
+disposition = "taken"
+targets = ["test/tools/require_all_passed.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.29"
+disposition = "not-applicable"
+reason = "grim-specific: Principle 9 diff tool and fixtures"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.30"
+disposition = "rewritten"
+targets = ["test/tests/test_accept_floor.py", "test/tests/test_accept_shard.py", "test/tests/test_text_io_hygiene.py"]
+reason = "meta tests kept; the floor-value assertion lowered to M's suite size (> 50)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.31"
+disposition = "rewritten"
+targets = ["test/taskfile.yml"]
+reason = "build, default, quick, parallel, floor:warn, shard, floor kept; build stages grim from GRIM_SOURCE_BINARY; index, old-grim, bench, demo and scripts tasks dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.32"
+disposition = "rewritten"
+targets = ["test/README.md"]
+reason = "rewritten for the mirror suites: layout, running, isolation, limits (added during PX accounting)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.33"
+disposition = "not-applicable"
+reason = "grim-specific: manual docker-compose registries and project rigs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.34"
+disposition = "taken"
+targets = ["test/taskfile.yml", "test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.35"
+disposition = "taken"
+targets = ["test/tests/test_mirror_cli.py", "test/tests/test_mirror_staging.py", "test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.36"
+disposition = "taken"
+targets = ["test/tests/test_mirror_cli.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.37"
+disposition = "taken"
+targets = ["test/tests", "test/conftest.py", "test/src"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.38"
+disposition = "taken"
+targets = ["test/tests", "test/conftest.py", "test/src", "test/tools"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.1"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "phase 1 runs format, clippy, shell, claude, ci:lint and docs:check; phase 2 build, unit tests and parallel acceptance; no test:scripts, catalog:verify; .verify:mark unchanged"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.2"
+disposition = "taken"
+targets = ["taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.3"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml"]
+reason = "verify, format, clippy, build, test:unit, license and audit tasks kept; hook size and audit tasks dropped; build status checks target/release/grim-mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.4"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml", "test/taskfile.yml"]
+reason = "sources anchor covers crates/ only; build status tests the grim-mirror binary; SKIP_BUILD defaults to false"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.5"
+disposition = "taken"
+targets = ["taskfile.yml", ".claude/hooks/pre_commit_verification.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.6"
+disposition = "rewritten"
+targets = ["taskfiles/docs.taskfile.yml"]
+reason = "docs:check runs doc_declaration, prose and links_raw over README.md and docs/; no site build or Node checks"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.7"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.1"
+disposition = "taken"
+targets = ["test/README.md", ".claude/rules/subsystem-tests.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.2"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md", "test/conftest.py"]
+reason = "Test Isolation section rewritten for M; per-test GRIM_HOME and HOME and unique_repo as in grimoire"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.3"
+disposition = "taken"
+targets = ["test/conftest.py", "test/tests/test_registry_required.py", ".claude/rules/subsystem-tests.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.4"
+disposition = "taken"
+targets = ["test/tests/test_text_io_hygiene.py", ".claude/rules/subsystem-tests.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.5"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "one rule line added; the helper is in test/src/assertions.py, the mirror suites use no symlink case yet"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.6"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "one rule line added; no mirror suite pins a digest yet, retag lives in test/src/registry.py"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.7"
+disposition = "taken"
+targets = ["test/taskfile.yml", ".claude/rules/subsystem-tests.md", ".github/workflows/acceptance.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.8"
+disposition = "taken"
+targets = [".claude/rules/workflow-bugfix.md", "AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.9"
+disposition = "taken"
+targets = [".claude/rules/subsystem-mirror.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.10"
+disposition = "taken"
+targets = ["Cargo.toml", ".claude/rules/quality-rust.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.11"
+disposition = "taken"
+targets = [".claude/rules/quality-python.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.12"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.13"
+disposition = "taken"
+targets = [".claude/rules/quality-core.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.14"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "rewritten for M's Structure and Key Fixtures tables and path scope"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#1"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#2"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#3"
+disposition = "taken"
+targets = ["test/tests/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#4"
+disposition = "taken"
+targets = ["test/tests/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#5"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#6"
+disposition = "taken"
+targets = ["test/conftest.py", "test/src/zot.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#7"
+disposition = "taken"
+targets = ["test/src/git_fixture.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#8"
+disposition = "taken"
+targets = ["test/src/registry.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#9"
+disposition = "rewritten"
+targets = ["test/src/helpers.py"]
+reason = "slimmed to the three helpers the suites import"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#10"
+disposition = "taken"
+targets = ["test/src/runner.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#11"
+disposition = "taken"
+targets = ["test/tests/test_mirror_cli.py", "test/tests/test_mirror_staging.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#12"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml", ".github/workflows/acceptance.yml"]
+reason = "grim-mirror and grim reach test/bin from two artifacts (grim-mirror-binary, grim-binary built at the pinned grimoire commit); deep verify has no Windows leg"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#13"
+disposition = "rewritten"
+targets = ["crates/grim-mirror/tests/boundary.rs", "crates/grim-mirror/tests/licenses", "crates/grim-mirror/licenses", "crates/grim-mirror/src"]
+reason = "unit tests, licence fixtures and texts carried over; boundary.rs rewritten for the SDK boundary"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#1"
+disposition = "rewritten"
+targets = ["test/conftest.py"]
+reason = "kept; only the managed Claude settings guard removed"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#2"
+disposition = "taken"
+targets = ["test/src/runner.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#3"
+disposition = "taken"
+targets = ["test/src/registry.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#4"
+disposition = "rewritten"
+targets = ["test/src/helpers.py"]
+reason = "slimmed to write_config and make_artifact plus tar_of"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#5"
+disposition = "rewritten"
+targets = ["test/tests/conftest.py"]
+reason = "project_dir and grim_at only"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#6"
+disposition = "taken"
+targets = ["test/src/git_fixture.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#7"
+disposition = "taken"
+targets = ["test/src/zot.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#8"
+disposition = "rewritten"
+targets = ["test/taskfile.yml"]
+reason = "GRIM_SOURCE_BINARY staging replaces the build; GRIM_INDEXER_DIR, old-grim and g0 grim pin dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#9"
+disposition = "taken"
+targets = ["test/tools/accept_floor.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#10"
+disposition = "not-applicable"
+reason = "grim state paths appear only in grim-only suites not carried to M"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.1"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml"]
+reason = "conventional-commits, dco, supply-chain, smoke and acceptance kept; builds grim at a pinned grimoire commit; no hook-size jobs; top-level permissions empty"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.2"
+disposition = "rewritten"
+targets = [".github/workflows/verify-deep.yml"]
+reason = "dispatch-only; Linux and macOS build and acceptance; no Windows, principle-9, index-e2e or mod-load-probe legs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.3"
+disposition = "rewritten"
+targets = [".github/workflows/acceptance.yml"]
+reason = "same plan, shards, merge, publish structure; takes a second artifact input for grim-mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.4"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20): publish = false, source-only"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.5"
+disposition = "not-applicable"
+reason = "grim-specific: signs and pushes grimoire's OCX package"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.6"
+disposition = "not-applicable"
+reason = "grim-specific: publishes grimoire's first-party catalog"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.7"
+disposition = "not-applicable"
+reason = "grim-specific: release-asset backfill into OCX"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.8"
+disposition = "rewritten"
+targets = [".github/workflows/claude.yml"]
+reason = "same workflow; claude-code-action pinned to an older tag at least two weeks old"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.9"
+disposition = "not-applicable"
+reason = "no docs site to deploy in M; docs/mirroring.md is checked by docs:check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.10"
+disposition = "rewritten"
+targets = [".github/actions/build-mirror/action.yml", ".github/actions/build-grim/action.yml"]
+reason = "build-mirror builds grim-mirror; build-grim builds and caches grim at the pinned grimoire commit"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.11"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml", ".github/workflows/acceptance.yml", ".github/workflows/claude.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.12"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/acceptance.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.13"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/acceptance.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.14"
+disposition = "rewritten"
+targets = [".github/workflows/verify-deep.yml"]
+reason = "basic is Linux x64 only; deep adds macOS aarch64; no Windows build for grim-mirror; no release targets"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.15"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/acceptance.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.16"
+disposition = "rewritten"
+targets = [".github/dependabot.yml"]
+reason = "github-actions entry lists M's two composite actions; cargo entry kept; no npm entry, no release.yml exclusion"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.17"
+disposition = "taken"
+targets = [".github/CODEOWNERS"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.18"
+disposition = "rewritten"
+targets = [".github/ISSUE_TEMPLATE/bug_report.yml", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/feature_request.yml"]
+reason = "fields and discussions link name grim-mirror; feature_request.yml unchanged"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.19"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/acceptance.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.1"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "includes git, rust, shell, coverage, ci, docs, claude, test; no bench, release, schema, upstream, p9, catalog; run task builds grim-mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.2"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml"]
+reason = "same task names minus hook:size and hook:audit"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.3"
+disposition = "rewritten"
+targets = ["taskfiles/shell.taskfile.yml"]
+reason = "tools run through ocx exec; skips installed bundle content under .claude/rules and .claude/skills (PD-21)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.4"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.5"
+disposition = "rewritten"
+targets = ["taskfiles/docs.taskfile.yml"]
+reason = "check only, no build or serve; see A3.6"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.6"
+disposition = "not-applicable"
+reason = "no release taskfile: M has no release flow (PD-20)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.7"
+disposition = "taken"
+targets = ["taskfiles/coverage.taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.8"
+disposition = "not-applicable"
+reason = "grim-specific: schema, bench, p9, upstream and catalog tasks; M adds its own ci.taskfile.yml"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.9"
+disposition = "rewritten"
+targets = [".claude/taskfile.yml"]
+reason = "verify, tests (adds scaffold manifest check), lint:links, statusline:install, fix:canonical-block; skips installed bundle content in the link check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.10"
+disposition = "taken"
+targets = [".taskrc.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.11"
+disposition = "taken"
+targets = ["taskfile.yml", ".claude/rules/subsystem-taskfiles.md", "AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.1"
+disposition = "rewritten"
+targets = ["Cargo.toml"]
+reason = "workspace with the single member crates/grim-mirror; one version, edition and license site; grim-sdk as a workspace path dependency"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.2"
+disposition = "taken"
+targets = ["Cargo.toml", "crates/grim-mirror/Cargo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.3"
+disposition = "taken"
+targets = ["rustfmt.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.4"
+disposition = "not-applicable"
+reason = "grim-specific: clippy disallowed-types for the TUI colour rule, M has no TUI"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.5"
+disposition = "taken"
+targets = ["rust-toolchain.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.6"
+disposition = "rewritten"
+targets = ["deny.toml"]
+reason = "allow list and policy keys unchanged; the unmaintained comment no longer names grimoire's advisories"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.7"
+disposition = "not-applicable"
+reason = "negative finding: M has no .cargo/config.toml and no rust-version either; the toolchain pin is the floor"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.8"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", "test/taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.9"
+disposition = "taken"
+targets = [".claude/rules/quality-rust-errors.md", ".claude/rules/quality-rust-exit_codes.md", "crates/grim-mirror/src/main.rs", "test/tests/test_mirror_cli.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.10"
+disposition = "not-applicable"
+reason = "grim-specific: dist, hook profiles and patch submodules; M has none"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.11"
+disposition = "rewritten"
+targets = [".claude/rules/product-tech-strategy.md"]
+reason = "Rust 2024 and Tokio kept; grim-hook deviation, Mold and Trivy rows dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.12"
+disposition = "not-applicable"
+reason = "grim-specific: build.rs, build/ generators and assets/"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.1"
+disposition = "taken"
+targets = ["cog.toml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.2"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml", "CONTRIBUTING.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.3"
+disposition = "not-applicable"
+reason = "negative finding: signed commits are not enforced, only DCO sign-off"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.4"
+disposition = "not-applicable"
+reason = "no changelog flow in M (PD-20): no release, so no cliff.toml; cog.toml only lets cocogitto accept the release commit type"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.5"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md", "AGENTS.md", ".claude/hooks/pre_push_main_blocker.py"]
+reason = "same branch model; worktree and repository names are M's"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.6"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "siblings are ../grim-mirror-wt-<topic>"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.1"
+disposition = "taken"
+targets = ["LICENSE", "Cargo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.2"
+disposition = "rewritten"
+targets = [".licenserc.toml"]
+reason = "holder and header text unchanged; [files] includes lists crates/**/*.rs only (hawkeye 7 schema)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.3"
+disposition = "not-applicable"
+reason = "negative finding: no NOTICE file; the bundled licence texts are matcher fixtures"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.4"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.1"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", ".github/workflows/verify-basic.yml", "deny.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.2"
+disposition = "not-applicable"
+reason = "grim-specific: cargo audit bin on the hook launcher"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.3"
+disposition = "not-applicable"
+reason = "no npm lockfile in M"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.4"
+disposition = "not-applicable"
+reason = "negative finding: no trivy, zizmor or gitleaks wiring in grimoire either"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.5"
+disposition = "rewritten"
+targets = ["SECURITY.md"]
+reason = "reporting channel kept; guarantees, scope and limitations rewritten for grim-mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.6"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md", ".claude/rules/subsystem-mirror.md"]
+reason = "threat model kept in M's own form beside the mirror invariants"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.1"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20): no dist-workspace.toml, the crate is publish = false and dist = false"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.2"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.3"
+disposition = "not-applicable"
+reason = "no release flow in M (PD-20): no changelog"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.4"
+disposition = "not-applicable"
+reason = "grim-specific: packaging/grim"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.1"
+disposition = "not-applicable"
+reason = "no docs site in M; docs/ holds the one mirroring page"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.2"
+disposition = "taken"
+targets = ["docs/mirroring.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.3"
+disposition = "not-applicable"
+reason = "M has no docs/docs.toml; the docs-plan skill infers the shape when none is declared"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.4"
+disposition = "rewritten"
+targets = [".claude/skills/docs-quality-reference/checks", ".claude/rules/docs-quality.md"]
+reason = "installed from the docs bundle under skills/docs-quality-reference; the local edits grimoire reapplies are not reapplied (PD-21)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.5"
+disposition = "not-applicable"
+reason = "grim-specific: site gates for grimoire's Starlight docs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.6"
+disposition = "rewritten"
+targets = [".claude/rules/docs-quality.md", ".claude/rules/docs-style.md"]
+reason = "docs-quality carried; docs-style rewritten for plain Markdown pages (README and docs/), Starlight and site material dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.7"
+disposition = "not-applicable"
+reason = "grim-specific: generated schemas, CATALOG.md and casts"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.1"
+disposition = "rewritten"
+targets = ["README.md"]
+reason = "sections Install, Use, What it will not do, Develop, License"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.2"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md"]
+reason = "layout, commands and test sections written for M"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.3"
+disposition = "taken"
+targets = ["CODE_OF_CONDUCT.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.4"
+disposition = "rewritten"
+targets = [".gitattributes"]
+reason = "line-ending, LFS, archive and CRLF-fixture blocks kept; conformance path dropped; ocx.lock merge=union added"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.5"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "target, test/bin, test/results, claude state and worktree entries; no grim-specific paths"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.6"
+disposition = "not-applicable"
+reason = "negative finding: no .editorconfig in grimoire or M"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.7"
+disposition = "not-applicable"
+reason = "grim-specific: patch submodules; M has none"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.8"
+disposition = "rewritten"
+targets = ["ocx.toml", "ocx.lock"]
+reason = "pins zot, uv, ruff, shellcheck, shfmt, hawkeye, cargo-deny, lychee, actionlint; no node, git-cliff or grim pin: grim comes from the pinned grimoire commit (PD-12)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.9"
+disposition = "taken"
+targets = ["taplo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.10"
+disposition = "not-applicable"
+reason = "negative finding: no ruff configuration in grimoire or M"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.11"
+disposition = "rewritten"
+targets = ["grimoire.toml", "grimoire.lock"]
+reason = "M installs its own bundles; scripts/, catalog/, CATALOG.md, .mcp.json and .serena/ are not carried"
+
+[[deviation]]
+what = "row disposition is per convention, not per file"
+reason = "a `taken` row means the convention it names is present unchanged; it may live inside a file whose `[[file]]` block is `rewritten` because other parts of that file were adapted (for example test classes in `.claude/tests/test_ai_config.py`)"

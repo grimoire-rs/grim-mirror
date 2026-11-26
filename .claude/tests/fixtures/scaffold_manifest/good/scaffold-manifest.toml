@@ -1,0 +1,59 @@
+[source]
+repository = "grimoire-rs/grimoire"
+
+[[file]]
+path = "out/copied.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "src/copied.txt"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03"
+
+[[file]]
+path = "out/new.txt"
+source_repo = "grimoire-rs/grimoire"
+source_path = "src/new.txt"
+source_commit = "untracked"
+mode = "rewritten"
+sha256 = "0000000000000000000000000000000000000000000000000000000000000000"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#1"
+disposition = "taken"
+targets = ["out/copied.txt"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#2"
+disposition = "rewritten"
+targets = ["out/new.txt"]
+reason = "new content"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1.1#1"
+disposition = "not-applicable"
+reason = "not needed"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.1"
+disposition = "taken"
+targets = ["out/copied.txt"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.2"
+disposition = "taken"
+targets = ["out/copied.txt"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#1"
+disposition = "taken"
+targets = ["out/new.txt"]
+
+[[deviation]]
+what = "none"
+reason = "fixture"
