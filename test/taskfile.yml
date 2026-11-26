@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+vars:
+  BIN_DIR: "{{.ROOT_DIR}}/test/bin"
+  GRIM_BINARY: "{{.BIN_DIR}}/grim{{exeExt}}"
+  GRIM_MIRROR_BINARY: "{{.BIN_DIR}}/grim-mirror{{exeExt}}"
+  SKIP_BUILD: '{{.SKIP_BUILD | default "false"}}'
+
+tasks:
+  build:
+    desc: Stage grim (copied from GRIM_SOURCE_BINARY) and build grim-mirror into test/bin
+    summary: |
+      The grim under test is built elsewhere (the grimoire checkout this
+      repository pins) and copied in. GRIM_SOURCE_BINARY names it; the default
+      is ../.grimoire-split/target/release/grim, resolved from the repository
+      root when the task runs. CI sets the variable. A missing file fails the
+      task. SKIP_BUILD=true keeps the binaries already staged.
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - |
+        src="${GRIM_SOURCE_BINARY:-$PWD/../.grimoire-split/target/release/grim{{exeExt}}}"
+        if [ ! -f "$src" ]; then
+          echo "test:build: no grim binary at '$src'; set GRIM_SOURCE_BINARY to the grim built from the pinned grimoire commit" >&2
+          exit 1
+        fi
+        mkdir -p '{{.BIN_DIR}}'
+        cp -f "$src" '{{.GRIM_BINARY}}'
+      - cargo build --release --locked -p grim-mirror
+      - cp -f '{{.ROOT_DIR}}/target/release/grim-mirror{{exeExt}}' '{{.GRIM_MIRROR_BINARY}}'
+    status:
+      - '{{eq .SKIP_BUILD "true"}}'
+
+  default:
+    desc: Run the acceptance tests (stages the binaries first)
+    cmds:
+      - task: build
+        vars:
+          SKIP_BUILD: "{{.SKIP_BUILD}}"
+      # ocx exec puts zot and uv (both pinned in the root ocx.toml) on PATH.
+      - ocx exec -- uv run pytest {{.CLI_ARGS | default "-v"}}
+    env:
+      GRIM_COMMAND: "{{.GRIM_BINARY}}"
+      GRIM_MIRROR_COMMAND: "{{.GRIM_MIRROR_BINARY}}"
+
+  quick:
+    desc: Run the acceptance tests in parallel without restaging the binaries
+    cmds:
+      - task: default
+        vars:
+          SKIP_BUILD: "true"
+          CLI_ARGS: '-n auto {{.CLI_ARGS | default "-v"}}'
+
+  parallel:
+    desc: Run the acceptance tests in parallel
+    summary: |
+      A full run (no CLI_ARGS) also writes results/junit-local-0-of-1.xml and
+      runs `test:floor:warn`, which prints a warning, never a failure, when the
+      suite breaks test/SUITE_FLOOR, SKIP_CEILING or XFAIL_CEILING. A filtered
+      run (CLI_ARGS set) skips the check; PR CI enforces the limits.
+    cmds:
+      # A report left by an earlier run must not stand in for this one.
+      - rm -f results/junit-local-0-of-1.xml
+      - task: default
+        vars:
+          CLI_ARGS: '-n auto {{.CLI_ARGS | default "-v --junit-xml=results/junit-local-0-of-1.xml"}}'
+      - task: floor:warn
+        vars:
+          FILTERED: '{{if .CLI_ARGS}}true{{else}}false{{end}}'
+
+  floor:warn:
+    desc: Judge the last local run (results/junit-local-0-of-1.xml) against the suite limits, warn only
+    cmds:
+      - cmd: |
+          if [ '{{.FILTERED | default "false"}}' = true ]; then exit 0; fi
+          python3 tools/accept_floor.py --label local --shard-count 1 \
+            || echo "WARNING: the suite breaks a limit above (test/SUITE_FLOOR, SKIP_CEILING or XFAIL_CEILING). Not a local failure; PR CI enforces it." >&2
+        silent: false
+
+  shard:
+    desc: Run one shard of the acceptance suite in parallel (SHARD_COUNT, SHARD_INDEX, SHARD_LABEL)
+    summary: |
+      Runs the modules tools/accept_shard.py selects for shard SHARD_INDEX of
+      SHARD_COUNT and writes results/junit-<SHARD_LABEL>-<SHARD_INDEX>-of-<SHARD_COUNT>.xml.
+      CI passes the runner OS as the label, so two legs of one run cannot
+      collide. A shard is a subset: `task test:floor` judges the whole set.
+    requires:
+      vars: [SHARD_COUNT, SHARD_INDEX, SHARD_LABEL]
+    vars:
+      # A var, not a pipe: a refused selection must stop the task, or pytest runs
+      # all of `testpaths` and reports the wrong shard green.
+      MODULES:
+        sh: python3 tools/accept_shard.py --shard-count '{{.SHARD_COUNT}}' --shard-index '{{.SHARD_INDEX}}'
+      REPORT: results/junit-{{.SHARD_LABEL}}-{{.SHARD_INDEX}}-of-{{.SHARD_COUNT}}.xml
+    cmds:
+      - task: build
+        vars:
+          SKIP_BUILD: "{{.SKIP_BUILD}}"
+      # A report left by an earlier run must not stand in for a shard that died.
+      - rm -f '{{.REPORT}}'
+      - ocx exec -- uv run pytest -n auto --junit-xml='{{.REPORT}}' {{catLines .MODULES}} {{.CLI_ARGS | default "-v"}}
+    env:
+      GRIM_COMMAND: "{{.GRIM_BINARY}}"
+      GRIM_MIRROR_COMMAND: "{{.GRIM_MIRROR_BINARY}}"
+
+  floor:
+    desc: Merge the shard reports into results/junit.xml and judge the whole suite (SHARD_COUNT, SHARD_LABEL)
+    summary: |
+      Runs tools/accept_floor.py over the SHARD_COUNT reports `task test:shard`
+      wrote under SHARD_LABEL. Refuses a failed case, a missing shard, a duplicate
+      case, a count under SUITE_FLOOR, skips or xfails over SKIP_CEILING or
+      XFAIL_CEILING, and a parked test. Standard library and git only.
+    requires:
+      vars: [SHARD_COUNT, SHARD_LABEL]
+    cmds:
+      - python3 tools/accept_floor.py --label '{{.SHARD_LABEL}}' --shard-count '{{.SHARD_COUNT}}'
