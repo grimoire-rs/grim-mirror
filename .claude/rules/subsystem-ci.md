@@ -103,7 +103,7 @@ Exception: a reusable workflow (`acceptance.yml`) declares none. Inside it `gith
 
 The acceptance suites need a real `grim` (`convert`, `publish`, `describe`, plugin dispatch). The `build-grim` composite action checks out `grimoire-rs/grimoire` at the full SHA in `.github/grim-commit` (the caller checks this repository out first), builds it with `cargo build --release --locked`, caches the binary keyed on that commit, and uploads it as the `grim-binary` artifact. Moving the pin is a one-line change in that file. The `build-mirror` composite action builds and uploads `grim-mirror` for one target.
 
-Until the grim-sdk crate resolves from a git dependency, the SDK path dependency exists only through the local `.grimoire-split` symlink, so these workflows cannot build on a runner. They are written for the post-split state and linted with actionlint.
+The `grim-sdk` git dependency in the root `Cargo.toml` pins the same revision as `.github/grim-commit`: move both together. The workflows are linted with actionlint.
 
 | Workflow | Jobs |
 |---|---|

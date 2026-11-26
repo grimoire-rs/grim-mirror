@@ -253,6 +253,7 @@ dependencies = [
 [[package]]
 name = "grim-sdk"
 version = "0.1.0"
+source = "git+https://github.com/grimoire-rs/grimoire?rev=82f4982ed4dac5aaab7f7ba006525b9f01a5cfdb#82f4982ed4dac5aaab7f7ba006525b9f01a5cfdb"
 dependencies = [
  "semver",
  "serde_json",

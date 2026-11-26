@@ -9,10 +9,9 @@ version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
 
-# The grim-sdk crate lives in the grimoire repository; this path reaches it
-# through a local symlink (`.grimoire-split`) beside the checkouts.
+# The grim-sdk crate lives in the grimoire repository, pinned by revision.
 [workspace.dependencies]
-grim-sdk = { path = "../.grimoire-split/crates/grim-sdk" }
+grim-sdk = { git = "https://github.com/grimoire-rs/grimoire", rev = "82f4982ed4dac5aaab7f7ba006525b9f01a5cfdb" }
 
 [workspace.lints.rust]
 # Panics must never cross a module boundary without caller consent.
