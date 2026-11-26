@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+vars:
+  CHECKS: '{{.ROOT_DIR}}/.claude/skills/docs-quality-reference/checks'
+
+tasks:
+  check:
+    desc: Run the docs-quality checks over README.md and docs/
+    summary: |
+      The check scripts arrive with the docs-essentials bundle (`grim install`).
+      A missing script fails the task: an uninstalled bundle must not read as a clean docs tree.
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - |
+        for s in doc_declaration prose links_raw; do
+          if [ ! -f '{{.CHECKS}}'/$s.py ]; then
+            echo "docs:check: {{.CHECKS}}/$s.py is missing; run 'grim install' to install the docs-essentials bundle" >&2
+            exit 1
+          fi
+        done
+        docs=$(find docs -name '*.md' 2>/dev/null | sort)
+        if [ -z "$docs" ]; then
+          echo "docs:check: no docs/**/*.md found" >&2
+          exit 1
+        fi
+        for s in doc_declaration prose links_raw; do
+          # shellcheck disable=SC2086
+          python3 '{{.CHECKS}}'/$s.py --root . README.md $docs || exit 1
+        done

@@ -1,0 +1,26 @@
+[workspace]
+members = ["crates/grim-mirror"]
+exclude = ["target"]
+resolver = "3"
+
+# The single version/edition/license site: members inherit it.
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+# The grim-sdk crate lives in the grimoire repository; this path reaches it
+# through a local symlink (`.grimoire-split`) beside the checkouts.
+[workspace.dependencies]
+grim-sdk = { path = "../.grimoire-split/crates/grim-sdk" }
+
+[workspace.lints.rust]
+# Panics must never cross a module boundary without caller consent.
+# Tests are exempt (clippy's unwrap_used/expect_used skip #[cfg(test)]).
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+# Library-style discipline for the domain modules. Scoped so tests still
+# use .unwrap()/.expect() freely (the restriction lints ignore test cfg).
+unwrap_used = "warn"
+expect_used = "warn"

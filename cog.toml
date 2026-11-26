@@ -1,0 +1,5 @@
+# Read by cocogitto in the pull-request commit check (verify-basic.yml).
+# `release` is the release-ceremony commit type (`release: vX.Y.Z`); M has no
+# changelog flow, so cocogitto only has to accept it.
+[commit_types]
+release = { changelog_title = "", omit_from_changelog = true }

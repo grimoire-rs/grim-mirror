@@ -1,0 +1,33 @@
+[licenses]
+allow = [
+  "Apache-2.0",
+  "MIT",
+  "BSD-3-Clause",
+  "ISC",
+  "Unicode-3.0",
+  "CC0-1.0",
+  "CDLA-Permissive-2.0",
+  "MIT-0",
+  "Zlib",
+  "OpenSSL",
+  "EPL-2.0",
+  "MPL-2.0",
+]
+confidence-threshold = 0.8
+
+[advisories]
+# Explicit rather than inherited: cargo-deny has changed these defaults
+# across major versions, and a supply-chain gate that silently loosens on a
+# tool upgrade is worse than no gate. A yanked crate is a warning, not a
+# failure — it is a publishing event, not a vulnerability.
+yanked = "warn"
+# "workspace", not "all": a transitive unmaintained crate nobody here can swap
+# must not fail every PR. Direct dependencies, the ones actually chosen, still fail.
+unmaintained = "workspace"
+
+[bans]
+multiple-versions = "warn"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "allow"

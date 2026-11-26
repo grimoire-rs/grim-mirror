@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+tasks:
+  verify:
+    desc: Shell script quality gate (shellcheck + shfmt)
+    summary: |
+      Installed bundle content under .claude/rules/ and .claude/skills/ is not
+      authored here and is skipped; shellcheck and shfmt come from ocx.toml.
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - |
+        files=$(git ls-files -co --exclude-standard '*.sh' '*.bash' | grep -Ev '^\.claude/(rules|skills)/' || true)
+        [ -z "$files" ] && { echo "no shell scripts"; exit 0; }
+        echo "$files" | xargs ocx exec -- shellcheck
+        echo "$files" | xargs ocx exec -- shfmt -d -i 4 -ci
+
+  format:
+    desc: Format shell scripts with shfmt
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - |
+        files=$(git ls-files -co --exclude-standard '*.sh' '*.bash' | grep -Ev '^\.claude/(rules|skills)/' || true)
+        [ -z "$files" ] && exit 0
+        echo "$files" | xargs ocx exec -- shfmt -w -i 4 -ci

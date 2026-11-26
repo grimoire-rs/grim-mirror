@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+x-shared:
+  rust-sources: &rust-sources
+    - '{{.ROOT_DIR}}/crates/**/*.rs'
+    - '{{.ROOT_DIR}}/Cargo.toml'
+    - '{{.ROOT_DIR}}/crates/**/Cargo.toml'
+    - '{{.ROOT_DIR}}/Cargo.lock'
+    - '{{.ROOT_DIR}}/rustfmt.toml'
+    - exclude: '{{.ROOT_DIR}}/target/**'
+
+tasks:
+  verify:
+    desc: Rust quality gate (format, clippy, license, build, unit tests)
+    summary: |
+      Runs all Rust-specific checks sequentially (fail-fast):
+        1. cargo fmt --all --check
+        2. cargo clippy
+        3. cargo-deny license audit
+        4. cargo build --release
+        5. cargo nextest run
+      Use during review-fix loops when only Rust code changed.
+    cmds:
+      - task: format:check
+      - task: clippy:check
+      - task: license:deps
+      - task: build
+      - task: test:unit
+
+  format:check:
+    desc: Check Rust formatting
+    sources: *rust-sources
+    cmd: cargo fmt --all --check
+
+  format:apply:
+    desc: Apply Rust formatting
+    cmd: cargo fmt --all
+
+  clippy:check:
+    desc: Run clippy linter
+    sources: *rust-sources
+    cmd: cargo clippy --workspace --locked --all-targets -- -D warnings
+
+  clippy:fix:
+    desc: Auto-fix clippy warnings
+    cmd: cargo clippy --workspace --locked --all-targets --fix --allow-dirty
+
+  build:
+    desc: Build the release binary
+    sources: *rust-sources
+    status:
+      - test -f {{.ROOT_DIR}}/target/release/grim-mirror
+    method: timestamp
+    cmd: cargo build --release --locked -p grim-mirror
+
+  install:nextest:
+    internal: true
+    cmds:
+      - task: :.ensure-cargo-tool
+        vars: { TOOL: cargo-nextest, CRATE: cargo-nextest }
+
+  test:unit:
+    desc: Run unit tests
+    sources: *rust-sources
+    deps:
+      - install:nextest
+    cmd: cargo nextest run --workspace --release --locked {{.CLI_ARGS}}
+
+  license:check:
+    desc: Check license headers on all source files
+    cmd: ocx exec -- hawkeye check
+
+  license:format:
+    desc: Add or fix license headers on all source files
+    cmd: ocx exec -- hawkeye format
+
+  license:deps:
+    desc: Audit dependency licenses with cargo-deny
+    cmd: ocx exec -- cargo deny check licenses
+
+  # Separate from license:deps because it needs the network (it fetches the
+  # RUSTSEC advisory DB) and because it can start failing on a commit that
+  # changed nothing — an advisory published upstream is not a regression in
+  # this diff. Kept a hard gate anyway: a known-vulnerable dependency should
+  # stop a release, and "warn" gates get ignored.
+  audit:
+    desc: Check dependencies against the RUSTSEC advisory database
+    cmd: ocx exec -- cargo deny check advisories bans sources

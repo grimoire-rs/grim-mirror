@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+# actionlint is pinned in ocx.toml. When ocx cannot provide it, set
+# ACTIONLINT_IMAGE (a tag at least two weeks old) to run the docker image.
+tasks:
+  lint:
+    desc: Lint the GitHub Actions workflows with actionlint
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - |
+        if ! ls .github/workflows/*.yml >/dev/null 2>&1; then
+          echo "ci:lint: no workflows under .github/workflows" >&2
+          exit 1
+        fi
+        if [ -n "${ACTIONLINT_IMAGE:-}" ]; then
+          docker run --rm -v "$PWD:/repo" -w /repo "$ACTIONLINT_IMAGE" -color
+        else
+          ocx exec -- actionlint
+        fi
