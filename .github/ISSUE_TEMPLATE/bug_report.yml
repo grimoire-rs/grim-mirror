@@ -1,0 +1,41 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal steps to reproduce the issue.
+      placeholder: |
+        1. Run `grim-mirror check --format json`  (attach the mirror.toml entry, redacted)
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, architecture, grim-mirror commit, grim version, git version.
+      placeholder: |
+        - OS: macOS 15.2 (arm64)
+        - grim-mirror: <commit sha>
+        - grim: 0.17.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Output
+      description: Relevant output, ideally the JSON run report (`--format json`).
+      render: text
